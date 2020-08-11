@@ -4,12 +4,16 @@ export const lightTheme = {
   mode: "light",
   primaryColor: "#2a9d8f",
   darkColor: "#202124",
+  socialColor: "#000000",
   borderBottom: ".6rem solid #2a9d8f",
   buttonBg: "#F5F5F5",
 }
 
 export const darkTheme = {
   mode: "dark",
+  blur: "#C4C4C4",
+  lightColor: "#F5F5F5",
+  socialColor: "#F5F5F5",
   primaryColor: "#2a9d8f",
   darkColor: "#202124",
   borderBottom: ".6rem solid #2a9d8f",

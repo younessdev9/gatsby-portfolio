@@ -4,12 +4,16 @@ export const StyledSection = styled.section`
   display: flex;
   justify-content: space-between;
   padding: 3rem;
+
+  .icons {
+    height: 4rem;
+    width: 4rem;
+  }
   .left-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     flex: 1;
-    /* background-color: #d6c6c6; */
     padding: 6rem 2rem;
     h3 {
       font-family: inherit;
@@ -41,7 +45,8 @@ export const StyledSection = styled.section`
       justify-content: space-between;
       margin-top: 7rem;
       .main-btn:hover {
-        box-shadow: 0 4px 6px #333333;
+        background-color: ${({ theme }) => theme.primaryColor};
+        color: ${({ theme }) => theme.buttonColor};
       }
     }
   }

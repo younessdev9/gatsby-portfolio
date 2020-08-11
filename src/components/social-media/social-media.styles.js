@@ -1,0 +1,16 @@
+import styled from "styled-components"
+
+export const StyledSocial = styled.ul`
+  display: flex;
+  justify-content: space-between;
+  width: 50rem;
+  height: 4rem;
+  margin: 0 auto;
+  list-style: none;
+
+  .social-icon {
+    fill: ${props => props.theme.socialColor};
+    width: 4.6rem;
+    height: 4.6rem;
+  }
+`

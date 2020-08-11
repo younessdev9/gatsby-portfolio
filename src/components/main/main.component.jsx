@@ -5,7 +5,7 @@ import Button from "../button/button.component"
 const Main = () => (
   <StyledMain>
     <div className="title">
-      <h2>Breif intro About me</h2>
+      <h2>Breif intro about me</h2>
     </div>
     <div className="bottom-info">
       <div className="intro">

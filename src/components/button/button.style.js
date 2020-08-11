@@ -23,5 +23,8 @@ export const StyledBtn = styled.button`
   :active {
     transform: translateY(-3px);
   }
+  :hover {
+    background-color: ${({ theme }) => theme.primaryColor};
+    color: ${({ theme }) => theme.buttonColor};
+  }
 `
-//bgColor //${props => props.bgColor};
