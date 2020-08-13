@@ -5,17 +5,18 @@ export const lightTheme = {
   primaryColor: "#2a9d8f",
   darkColor: "#202124",
   socialColor: "#000000",
-  borderBottom: ".6rem solid #2a9d8f",
+  borderBottom: ".4rem solid #2a9d8f",
   buttonBg: "#F5F5F5",
+  buttonColor: "#000000",
 }
 
 export const darkTheme = {
   mode: "dark",
   blur: "#C4C4C4",
-  lightColor: "#F5F5F5",
+  lightColor: "#F5F5F5", //   buttonColor
   socialColor: "#F5F5F5",
   primaryColor: "#2a9d8f",
-  darkColor: "#202124",
+  darkColor: "#202124", //buttonColor
   borderBottom: ".6rem solid #2a9d8f",
   buttonBg: "#202124",
   buttonColor: "#F5F5F5",

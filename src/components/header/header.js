@@ -4,21 +4,20 @@ export const StyledHeader = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.4rem;
-  font-size: 2.4rem;
-  /* border-bottom: 1px solid #333; */
-  /* div {
-    display: flex;
-    align-items: center;
-  } */
+  height: 5vh;
+  padding: 1rem;
+  font-size: 2rem;
+
   .active {
     border-bottom: ${props => props.theme.borderBottom};
   }
+
   img {
     width: 6rem;
     height: 5rem;
     margin-left: 4rem;
   }
+
   ul {
     margin-right: 2rem;
     display: flex;
@@ -27,6 +26,7 @@ export const StyledHeader = styled.header`
     list-style: none;
     width: 50rem;
   }
+
   ul li {
     display: flex;
     align-items: center;

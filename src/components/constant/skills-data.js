@@ -8,7 +8,7 @@ export const data = [
   {
     id: 1,
     img: <HtmlImg className="skill-icon" />,
-    title: "HTML and CSS",
+    title: "HTML | CSS and SASS",
   },
   {
     id: 2,

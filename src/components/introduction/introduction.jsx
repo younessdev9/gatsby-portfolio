@@ -1,8 +1,8 @@
 import React from "react"
 import Icon from "../assets/developer-img.svg"
-import { StyledMain } from "./main.style"
+import { StyledMain } from "./introduction.style"
 import Button from "../button/button.component"
-const Main = () => (
+const Introduction = () => (
   <StyledMain>
     <div className="title">
       <h2>Breif intro about me</h2>
@@ -24,4 +24,4 @@ const Main = () => (
   </StyledMain>
 )
 
-export default Main
+export default Introduction

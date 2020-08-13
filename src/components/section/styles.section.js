@@ -3,8 +3,9 @@ import styled from "styled-components"
 export const StyledSection = styled.section`
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap-reverse;
   padding: 3rem;
-
+  height: 90vh;
   .icons {
     height: 4rem;
     width: 4rem;
@@ -21,15 +22,13 @@ export const StyledSection = styled.section`
       font-weight: 500;
       line-height: 8.4rem;
       font-style: normal;
+      text-align: center;
       span {
         color: #2a9d8f;
         font-family: inherit;
       }
     }
     h4 {
-      width: 68rem;
-      height: 8.8rem;
-
       font-family: inherit;
       font-style: normal;
       font-weight: normal;
@@ -40,9 +39,10 @@ export const StyledSection = styled.section`
       margin-top: 5rem;
     }
     .btns {
-      width: 52rem;
       display: flex;
       justify-content: space-between;
+      width: 50rem;
+      flex-wrap: wrap;
       margin-top: 7rem;
       .main-btn:hover {
         background-color: ${({ theme }) => theme.primaryColor};
@@ -53,7 +53,6 @@ export const StyledSection = styled.section`
   .right-section {
     display: flex;
     justify-content: flex-end;
-    /* <background-color: #c4c4c4; */
     flex: 1;
     padding: 4rem;
   }

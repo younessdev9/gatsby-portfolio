@@ -4,8 +4,7 @@ import Header from "./header/headre"
 import { Globalstyles, lightTheme, darkTheme } from "../globalstyles"
 
 const Layout = ({ children }) => {
-  const [theme, setTheme] = useState("light")
-
+  const [theme, setTheme] = useState()
   const toggleTheme = () => {
     if (theme === "light") {
       window.localStorage.setItem("theme", "dark")
@@ -25,7 +24,6 @@ const Layout = ({ children }) => {
       window.localStorage.setItem("theme", "light")
     }
   }, [theme])
-
   const handleChecking = () => {
     if (theme === "dark") {
       return true

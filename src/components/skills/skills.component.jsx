@@ -1,9 +1,6 @@
 import React from "react"
 import { StyledSkills } from "./skills.styles"
 import { data } from "../constant/skills-data"
-// import HtmlImg from "../assets/htmlcss.svg"
-// import JavaScriptImg from "../assets/js.svg"
-// import GatsbyImg from "../assets/gatsby.svg"
 
 const skills = data.map(({ id, img, title }) => (
   <div key={id} className="skill-item">
@@ -22,5 +19,3 @@ const Skills = () => {
 }
 
 export default Skills
-
-// <div className="skill-img">{img}</div>

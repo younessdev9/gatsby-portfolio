@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export const StyledMain = styled.main`
+export const StyledMain = styled.section`
   display: flex;
   justify-content: space-between;
   flex-direction: column;

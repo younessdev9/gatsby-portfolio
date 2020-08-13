@@ -9,11 +9,12 @@ export const StyledSkills = styled.div`
   margin: 3rem auto;
 
   .cards {
-    width: 80%;
+    min-width: 80%;
     height: 100%;
 
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 6rem;
   }
 
@@ -39,6 +40,7 @@ export const StyledSkills = styled.div`
     border: 3px solid #2a9d8f;
     border-radius: 8px;
     transition: all 0.3s ease-out;
+    margin: 0.8rem;
     padding: 0.4rem;
     &:hover {
       box-shadow: 4px 4px 10px -3px ${props => props.theme.blur},

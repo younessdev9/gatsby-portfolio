@@ -40,7 +40,7 @@ const Header = ({ toggle, checked }) => {
             onChange={toggle}
             checked={checked()}
             size={60}
-            speed={2}
+            speed={3}
           />
         </li>
       </ul>
