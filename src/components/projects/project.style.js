@@ -30,6 +30,8 @@ const StyledProjects = styled.div`
     height: 37rem;
     margin: 1rem;
     transition: all 0.3s ease-out;
+    border: 3px solid #2a9d8f;
+    border-radius: 8px;
 
     &:hover {
       box-shadow: 4px 4px 10px -3px ${props => props.theme.blur},
