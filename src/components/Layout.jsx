@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
 import { ThemeProvider } from "styled-components"
 import Header from "./header/headre"
+import Footer from "../components/footer/footer.component"
 import { Globalstyles, lightTheme, darkTheme } from "../globalstyles"
 
 const Layout = ({ children }) => {
@@ -36,6 +37,7 @@ const Layout = ({ children }) => {
       <Globalstyles />
       <Header toggle={toggleTheme} checked={handleChecking} />
       {children}
+      <Footer />
     </ThemeProvider>
   )
 }

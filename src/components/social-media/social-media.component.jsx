@@ -1,5 +1,5 @@
 import React from "react"
-import { withTheme } from "styled-components"
+// import { withTheme } from "styled-components"
 import { StyledSocial } from "./social-media.styles"
 import { data } from "../constant/social-links"
 
@@ -14,4 +14,4 @@ const Social = () => {
   return <StyledSocial>{links}</StyledSocial>
 }
 
-export default withTheme(Social)
+export default Social

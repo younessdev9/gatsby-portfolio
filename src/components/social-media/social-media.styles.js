@@ -12,5 +12,10 @@ export const StyledSocial = styled.ul`
     fill: ${props => props.theme.socialColor};
     width: 4.6rem;
     height: 4.6rem;
+    transition: all 0.3s ease-out;
+    &:hover {
+      fill: ${({ theme }) => theme.primaryColor};
+      transform: scale(1.2);
+    }
   }
 `

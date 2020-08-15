@@ -37,6 +37,26 @@ const StyledProjects = styled.div`
         -4px 4px 10px -3px ${props => props.theme.blur};
       transform: scale(1.05);
     }
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+      list-style: none;
+      margin-top: 0.8rem;
+      li {
+        border: 1px solid #2a9d8f;
+        border-radius: 2px;
+        padding: 0.3rem;
+        transition: all 0.3s ease-out;
+        &:hover {
+          color: #f5f5f5;
+          background-color: ${({ theme }) => theme.primaryColor};
+          cursor: pointer;
+        }
+        &:active {
+          transform: translateY(-2px);
+        }
+      }
+    }
   }
   .project-card-title {
     font-family: Montserrat;
@@ -51,7 +71,7 @@ const StyledProjects = styled.div`
     height: 100%;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     margin: 6rem 2rem;
   }

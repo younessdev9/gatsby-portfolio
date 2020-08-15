@@ -15,6 +15,7 @@ const PrevProjects = () => {
           title
           demoLink
           githubLink
+          stuck
           img {
             fluid(maxWidth: 500, maxHeight: 400) {
               ...GatsbyContentfulFluid
@@ -25,10 +26,15 @@ const PrevProjects = () => {
     }
   `)
   const projectCards = data.projects.nodes.map(
-    ({ title, demoLink, githubLink, img: { fluid } }, i) => (
+    ({ title, demoLink, githubLink, img: { fluid }, stuck }, i) => (
       <div key={i + 4} className="project-card">
         <Img fluid={fluid} alt="project one image" />
         <h4 className="project-card-title">{title}</h4>
+        <ul className="stuck">
+          {stuck.map((item, i) => (
+            <li key={i + 1}>{item}</li>
+          ))}
+        </ul>
         <div className="project-links">
           <a href={githubLink} target="_blank" rel="noreferrer">
             <FaGithub className="icon" />
