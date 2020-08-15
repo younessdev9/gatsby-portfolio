@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 const StyledFooter = styled.footer`
   border-top: 2px solid #333333;
-  height: 15vh;
+  height: 10vh;
   display: flex;
   padding: 0.5rem;
   flex-direction: column;

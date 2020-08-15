@@ -39,13 +39,11 @@ export const Globalstyles = createGlobalStyle`
   }
   body {
     font-size: 1.7rem;
-    margin: 0;
     font-family: 'Montserrat', sans-serif;
     background-color: ${props =>
       props.theme.mode === "dark" ? props.theme.darkColor : "#FFFFFF"};
     color: ${props => (props.theme.mode === "dark" ? "#FFFFFF" : "#202124")};
-    padding: 2rem 3.4rem;
-
+    padding: 1rem 1.4rem;
   }
 `
 

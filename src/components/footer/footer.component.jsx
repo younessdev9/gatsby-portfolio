@@ -4,7 +4,12 @@ import Social from "../social-media/social-media.component"
 import Gatsby from "../assets/gatsby.svg"
 const Footer = () => (
   <StyledFooter>
-    <h3>You can find me in 👇</h3>
+    <h3>
+      You can find me in{" "}
+      <span role="img" aria-label="Pointing Down">
+        👇
+      </span>
+    </h3>
     <div className="social-media">
       <Social />
     </div>
