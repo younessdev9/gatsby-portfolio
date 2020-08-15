@@ -25,6 +25,6 @@ export const StyledBtn = styled.button`
   }
   :hover {
     background-color: ${({ theme }) => theme.primaryColor};
-    color: ${({ theme }) => theme.buttonColor};
+    color: ${({ theme }) => theme.btnHoverColor};
   }
 `

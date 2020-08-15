@@ -8,6 +8,7 @@ export const lightTheme = {
   borderBottom: ".4rem solid #2a9d8f",
   buttonBg: "#F5F5F5",
   buttonColor: "#000000",
+  btnHoverColor: "#F5F5F5",
 }
 
 export const darkTheme = {
@@ -22,6 +23,7 @@ export const darkTheme = {
   buttonColor: "#F5F5F5",
   boxShadow: "0 7px 10px #F5F5F5",
   btnColor: "#202124",
+  btnHoverColor: "#F5F5F5",
 }
 
 export const Globalstyles = createGlobalStyle`
