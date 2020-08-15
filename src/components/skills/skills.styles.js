@@ -19,14 +19,11 @@ export const StyledSkills = styled.div`
   }
 
   h2 {
-    width: 16rem;
-    height: 78px;
-
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
-    font-size: 6rem;
-    line-height: 7rem;
+    font-size: 4rem;
+    line-height: 4.7rem;
 
     border-bottom: 4px solid #2a9d8f;
     color: ${props => props.theme.lightColor};

@@ -5,7 +5,7 @@ import { data } from "../constant/social-links"
 
 const links = data.map(({ id, icon, url }) => (
   <li key={id}>
-    <a href={url} className="social-link" target="_blank" rel="noopener">
+    <a href={url} className="social-link" target="_blank" rel="noreferrer">
       {icon}
     </a>
   </li>
