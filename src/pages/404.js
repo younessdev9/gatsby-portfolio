@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/Layout"
-import StyledError from "../components/page-styles/errorpage.js"
+import StyledError from "../pages-styles/errorpage"
 import PageError from "../components/assets/errorpage.svg"
 
 const ErrorPage = () => {

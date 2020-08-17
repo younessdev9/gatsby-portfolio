@@ -7,7 +7,7 @@ const StyledProjects = styled.div`
   flex-wrap: wrap;
 
   padding: 3rem;
-  margin: 3rem auto;
+  margin: 3rem auto 10rem auto;
 
   h2 {
     font-family: Montserrat;
