@@ -36,6 +36,7 @@ const StyledAbout = styled.div`
     display: flex;
     flex-direction: column;
     width: 50%;
+    height: 43rem;
     p {
       font-family: Montserrat;
       font-style: normal;
@@ -44,6 +45,20 @@ const StyledAbout = styled.div`
       line-height: 3rem;
       letter-spacing: -0.025em;
       flex-grow: 1;
+    }
+
+    .langagues-tools {
+      .tools-title {
+        border-bottom: 2px solid ${({ theme }) => theme.primaryColor};
+        font-style: normal;
+        font-size: 2.7rem;
+        font-weight: 500;
+        line-height: 4rem;
+        margin: 2rem;
+      }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   }
 `

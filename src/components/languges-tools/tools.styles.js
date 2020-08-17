@@ -1,7 +1,6 @@
 import styled from "styled-components"
 
 const StyledTools = styled.ul`
-  background-color: #c4c4c4;
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -11,6 +10,10 @@ const StyledTools = styled.ul`
   .tool {
     height: 3.8rem;
     width: 3.8rem;
+    transition: transform 0.3s ease-out;
+    &:hover {
+      transform: scale(1.07);
+    }
   }
 `
 export default StyledTools
