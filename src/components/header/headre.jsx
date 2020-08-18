@@ -26,12 +26,12 @@ const Header = ({ toggle, checked }) => {
           </Link>
         </li>
         <li className="list-item">
-          <Link to="#" activeClassName="active">
+          <Link to="/projects" activeClassName="active">
             Projects
           </Link>
         </li>
         <li className="list-item">
-          <Link to="#" activeClassName="active">
+          <Link to="/blog" activeClassName="active">
             Blog
           </Link>
         </li>
