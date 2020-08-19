@@ -35,6 +35,11 @@ const Header = ({ toggle, checked }) => {
             Blog
           </Link>
         </li>
+        <li className="list-item">
+          <Link to="/contact" activeClassName="active">
+            Contact
+          </Link>
+        </li>
         <li>
           <DarkModeToggle
             onChange={toggle}

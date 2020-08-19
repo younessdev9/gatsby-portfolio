@@ -5,8 +5,10 @@ export const StyledHeader = styled.header`
   align-items: center;
   justify-content: space-between;
   height: 5vh;
+  max-width: 80%;
+  margin: 0 auto;
   padding: 1rem;
-  font-size: 2rem;
+  font-size: 1.8rem;
 
   .active {
     border-bottom: ${props => props.theme.borderBottom};
@@ -24,7 +26,7 @@ export const StyledHeader = styled.header`
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    width: 50rem;
+    width: 45%;
   }
 
   ul li {
