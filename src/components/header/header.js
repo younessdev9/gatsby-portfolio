@@ -10,16 +10,18 @@ export const StyledHeader = styled.header`
   padding: 1rem;
   font-size: 1.8rem;
 
+  .logo {
+    width: 10rem;
+    height: 10rem;
+
+    path {
+      fill: ${({ theme }) => theme.socialColor};
+    }
+  }
+
   .active {
     border-bottom: ${props => props.theme.borderBottom};
   }
-
-  img {
-    width: 6rem;
-    height: 5rem;
-    margin-left: 4rem;
-  }
-
   ul {
     margin-right: 2rem;
     display: flex;
