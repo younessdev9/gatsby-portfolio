@@ -13,10 +13,6 @@ export const StyledHeader = styled.header`
   .logo {
     width: 10rem;
     height: 10rem;
-
-    path {
-      fill: ${({ theme }) => theme.socialColor};
-    }
   }
 
   .active {
