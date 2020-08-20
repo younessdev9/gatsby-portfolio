@@ -6,7 +6,7 @@ export const lightTheme = {
   darkColor: "#202124",
   socialColor: "#000000",
   borderBottom: ".4rem solid #2a9d8f",
-  buttonBg: "#F5F5F5",
+  buttonBg: "#FFFFFF",
   buttonColor: "#000000",
   btnHoverColor: "#F5F5F5",
   submitBtnBgColor: "#f5f5f5",
@@ -44,11 +44,7 @@ export const Globalstyles = createGlobalStyle`
     font-family: 'Montserrat', sans-serif;
     background-color: ${props =>
       props.theme.mode === "dark" ? props.theme.darkColor : "#FFFFFF"};
-    color: ${props => (props.theme.mode === "dark" ? "#FFFFFF" : "#202124")};
-    padding: 1rem 1.4rem;
+    color: ${props => (props.theme.mode === "dark" ? "#F5F5F5" : "#202124")};
+    padding: 7rem 1rem 1rem 1rem;
   }
 `
-
-// ${props =>
-//   props.theme.mode === "dark" ? "#202124" : "#FFFFFF"},
-// color:${props => (props.theme.mode === "dark" ? "#FFFFFF" : "#202124")},

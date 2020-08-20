@@ -1,15 +1,23 @@
 import styled from "styled-components"
 
 export const StyledHeader = styled.header`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 5vh;
-  max-width: 80%;
-  margin: 0 auto;
-  padding: 1rem;
+  width: 100%;
   font-size: 1.8rem;
+  position: fixed;
+  top: 0;
+  border-bottom: 1px #333333 solid;
+  .header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    height: 5vh;
+    margin: 0 auto;
+    padding: 1rem;
+  }
 
+  background-color: ${({ theme }) => theme.buttonBg};
+  z-index: 100;
   .logo {
     width: 10rem;
     height: 10rem;

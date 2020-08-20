@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import { StyledSection } from "./styles.section"
 import Icon from "../assets/myimage.svg"
 import Button from "../button/button.component"
@@ -8,7 +9,8 @@ const Section = () => {
     <StyledSection>
       <div className="left-section">
         <h3>
-          I<span>'</span>m <span>Y</span>ouness <span>H</span>assani
+          Hi there! <br />I<span>'</span>m <span>Y</span>ouness <span>H</span>
+          assani
         </h3>
         <h4>
           A self-taugh front-end web developer and javaScript enthusiastic
@@ -17,9 +19,11 @@ const Section = () => {
           <Button className="main-btn" bgColor={"#FFFFFF"} brValue={"70px"}>
             Resume
           </Button>
-          <Button className="main-btn" bgColor={"#FFFFFF"} brValue={"70px"}>
-            Contact me
-          </Button>
+          <Link to="/contact">
+            <Button className="main-btn" bgColor={"#FFFFFF"} brValue={"70px"}>
+              Contact me
+            </Button>
+          </Link>
         </div>
       </div>
       <div className="right-section">
