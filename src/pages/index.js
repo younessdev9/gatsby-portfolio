@@ -9,7 +9,6 @@ import PrevProjects from "../components/projects/projects.component"
 const Home = () => (
   <Layout>
     <Section />
-    <Introduction />
     <Social width={"4.6rem"} height={"4.6rem"} />
     <Skills />
     <PrevProjects />

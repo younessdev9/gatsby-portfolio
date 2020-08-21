@@ -13,7 +13,8 @@ const Section = () => {
           assani
         </h3>
         <h4>
-          A self-taugh front-end web developer and javaScript enthusiastic
+          A self-taugh front-end web developer and javaScript enthusiastic and
+          fast learner
         </h4>
         <div className="btns">
           <Button className="main-btn" bgColor={"#FFFFFF"} brValue={"70px"}>

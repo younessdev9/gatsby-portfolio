@@ -15,7 +15,7 @@ const Introduction = () => (
           projects with high quality code and uwing modern tools and
           technologies like gatsbyjs and more...
         </p>
-        <Button className="about-btn" brValue={"20px"}>
+        <Button className="about-btn" brValue={"17px"}>
           About
         </Button>
       </div>

@@ -12,7 +12,7 @@ export const StyledBtn = styled.button`
   font-family: inherit;
   font-style: normal;
   font-weight: normal;
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 3rem;
 
   transition: all 0.3s ease-out;

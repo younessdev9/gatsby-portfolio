@@ -4,6 +4,7 @@ import Img from "gatsby-image"
 import Layout from "../components/Layout"
 import StyledAbout from "../pages-styles/about"
 import Tools from "../components/languges-tools/tools"
+import { MdLocationOn, MdEmail, MdPhone } from "react-icons/md"
 
 const About = () => {
   const data = useStaticQuery(graphql`
@@ -39,9 +40,29 @@ const About = () => {
               publishing software like Aldus PageMaker including versions of
               Lorem Ipsum.
             </p>
+            <div className="info">
+              <div className="sub-info">
+                <MdLocationOn className="icon" />
+                <p>I'm from Ain Harrouda Mohammedia, Morocco</p>
+              </div>
+
+              <div className="sub-info">
+                <MdEmail className="icon" />
+                <p>
+                  <a href="mailto:hassani.youness1999@gmail.com">
+                    hassani.youness1999@gmail.com
+                  </a>
+                </p>
+              </div>
+
+              <div className="sub-info">
+                <MdPhone className="icon" />
+                <p>+2120651070251</p>
+              </div>
+            </div>
             <div className="langagues-tools">
               <h4 className="tools-title">Languages and Tools:</h4>
-              <Tools />
+              <Tools className="tools" />
             </div>
           </div>
         </div>
