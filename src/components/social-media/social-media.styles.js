@@ -10,8 +10,8 @@ export const StyledSocial = styled.ul`
 
   .social-icon {
     fill: ${props => props.theme.socialColor};
-    width: 4rem;
-    height: 4rem;
+    width: 2.7rem;
+    height: 2.7rem;
 
     transition: all 0.3s ease-out;
     &:hover {

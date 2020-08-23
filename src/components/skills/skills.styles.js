@@ -22,11 +22,11 @@ export const StyledSkills = styled.div`
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
-    font-size: 4rem;
-    line-height: 4.7rem;
+    font-size: 3.5rem;
+    line-height: 4rem;
 
-    border-bottom: 4px solid #2a9d8f;
-    color: ${props => props.theme.lightColor};
+    border-bottom: 3px solid ${({ theme }) => theme.primaryColor};
+    color: ${({ theme }) => theme.lightColor};
   }
   .skill-item {
     display: flex;
@@ -34,7 +34,7 @@ export const StyledSkills = styled.div`
     align-items: center;
     width: 30rem;
     height: 35rem;
-    border: 3px solid #2a9d8f;
+    border: 1px solid ${({ theme }) => theme.primaryColor};
     border-radius: 8px;
     transition: all 0.3s ease-out;
     margin: 0.8rem;
@@ -43,7 +43,7 @@ export const StyledSkills = styled.div`
       box-shadow: 4px 4px 10px -3px ${props => props.theme.blur},
         4px 4px 10px ${props => props.theme.blur},
         -4px 4px 10px -3px ${props => props.theme.blur};
-      transform: scale(1.05);
+      transform: scale(1.03);
     }
   }
   .skill-icon {
