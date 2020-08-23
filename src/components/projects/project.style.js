@@ -13,10 +13,10 @@ const StyledProjects = styled.div`
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
-    font-size: 4rem;
-    line-height: 4.8rem;
-    width: 17rem;
-    border-bottom: 4px solid #2a9d8f;
+    font-size: 3.5rem;
+    line-height: 4rem;
+
+    border-bottom: 3px solid ${({ theme }) => theme.primaryColor};
     color: ${props => props.theme.lightColor};
   }
 
@@ -30,14 +30,14 @@ const StyledProjects = styled.div`
     height: 37rem;
     margin: 1rem;
     transition: all 0.3s ease-out;
-    border: 3px solid #2a9d8f;
+    border: 1px solid ${({ theme }) => theme.primaryColor};
     border-radius: 8px;
 
     &:hover {
       box-shadow: 4px 4px 10px -3px ${props => props.theme.blur},
         4px 4px 10px ${props => props.theme.blur},
         -4px 4px 10px -3px ${props => props.theme.blur};
-      transform: scale(1.05);
+      transform: scale(1.03);
     }
     ul {
       display: flex;

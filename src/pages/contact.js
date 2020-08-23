@@ -6,7 +6,7 @@ const Contact = () => (
   <Layout>
     <StyledContact>
       <p>
-        You can send me email to:
+        You can send me email to: &nbsp;
         <a href="mailto:hassani.youness1999@gmail.com">
           hassani.youness1999@gmail.com
         </a>{" "}
