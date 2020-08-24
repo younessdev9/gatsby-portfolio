@@ -4,12 +4,14 @@ import { Link } from "gatsby"
 import DarkModeToggle from "react-dark-mode-toggle"
 import { StyledHeader } from "./header"
 import Logo from "../assets/thefinal.svg"
-const Header = ({ toggle, checked }) => (
+import Burger from "../burger/burger"
+const Header = ({ toggle, checked, open, setOpen }) => (
   <StyledHeader>
     <div className="header-wrapper">
       <Link to="/">
         <Logo className="logo" />
       </Link>
+      <Burger open={open} setOpen={setOpen} className="burger-menu" />
       <ul>
         <li>
           <Link to="/" activeClassName="active">

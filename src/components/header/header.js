@@ -1,11 +1,13 @@
 import styled from "styled-components"
 
-export const StyledHeader = styled.header`
+export const StyledHeader = styled.nav`
   width: 100%;
   font-size: 1.8rem;
   position: fixed;
   top: 0;
   border-bottom: 1px #333333 solid;
+  background-color: ${({ theme }) => theme.buttonBg};
+  z-index: 100;
   .header-wrapper {
     display: flex;
     align-items: center;
@@ -14,13 +16,14 @@ export const StyledHeader = styled.header`
     height: 5vh;
     margin: 0 auto;
     padding: 1rem;
-  }
 
-  background-color: ${({ theme }) => theme.buttonBg};
-  z-index: 100;
+    .menu-icon {
+      display: none;
+    }
+  }
   .logo {
     width: 10rem;
-    height: 10rem;
+    height: 8.7rem;
   }
 
   .active {
@@ -43,6 +46,19 @@ export const StyledHeader = styled.header`
       text-decoration: none;
       display: block;
       padding: 0.9rem;
+    }
+  }
+  @media only screen and (max-width: ${({ theme }) => theme.tablet}) {
+    ul {
+      display: none;
+    }
+
+    .header-wrapper {
+      .menu-icon {
+        display: block;
+        height: 6rem;
+        width: 6rem;
+      }
     }
   }
 `

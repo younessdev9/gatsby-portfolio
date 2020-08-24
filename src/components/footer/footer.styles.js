@@ -5,7 +5,8 @@ const StyledFooter = styled.footer`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem;
+  flex-wrap: wrap;
+  padding: 1rem;
   background-color: ${({ theme }) => theme.primaryColor}
   *:not(.gatsby-logo) {
     margin: 0.6rem;

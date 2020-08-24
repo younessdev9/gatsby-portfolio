@@ -11,6 +11,19 @@ export const lightTheme = {
   btnHoverColor: "#F5F5F5",
   submitBtnBgColor: "#f5f5f5",
   anchortagColor: "red",
+  mobileS: "320px",
+  mobileM: "375px",
+  mobileL: "425px",
+  tablet: "768px",
+  laptop: "1024px",
+  laptopL: "1440px",
+  desktop: "2560px",
+  //added
+
+  primaryDark: "#0D0C1D",
+  primaryLight: "#EFFFFA",
+  primaryHover: "#343078",
+  mobile: "576px",
 }
 
 export const darkTheme = {
@@ -28,6 +41,20 @@ export const darkTheme = {
   btnHoverColor: "#F5F5F5",
   submitBtnBgColor: "#2a9d8f",
   anchortagColor: "#F5F5F5",
+  mobileS: "320px",
+  mobileM: "375px",
+  mobileL: "425px",
+  tablet: "768px",
+  laptop: "1024px",
+  laptopL: "1440px",
+  desktop: "2560px",
+
+  //adedd
+
+  primaryDark: "#0D0C1D",
+  primaryLight: "#EFFFFA",
+  primaryHover: "#343078",
+  mobile: "576px",
 }
 
 export const Globalstyles = createGlobalStyle`

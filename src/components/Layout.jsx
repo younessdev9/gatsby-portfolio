@@ -4,8 +4,12 @@ import Header from "./header/headre"
 import Footer from "../components/footer/footer.component"
 import { Globalstyles, lightTheme, darkTheme } from "../globalstyles"
 
+import Menu from "./menu/menu"
+
 const Layout = ({ children }) => {
   const [theme, setTheme] = useState()
+  const [open, setOpen] = useState(false)
+
   const toggleTheme = () => {
     if (theme === "light") {
       window.localStorage.setItem("theme", "dark")
@@ -35,10 +39,23 @@ const Layout = ({ children }) => {
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <Globalstyles />
-      <Header toggle={toggleTheme} checked={handleChecking} />
+      <Header
+        toggle={toggleTheme}
+        checked={handleChecking}
+        open={open}
+        setOpen={setOpen}
+      />
+      <Menu
+        open={open}
+        setOpen={setOpen}
+        toggle={toggleTheme}
+        checked={handleChecking}
+      />
       {children}
       <Footer />
     </ThemeProvider>
   )
 }
 export default Layout
+
+//toggleSidebar={toggleSidebar}
