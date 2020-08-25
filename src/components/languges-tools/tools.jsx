@@ -29,7 +29,7 @@ const langugesAndTools = [
 const Tools = () => (
   <StyledTools>
     {langugesAndTools.map(item => (
-      <li className="tool">{item}</li>
+      <li className="tool-parent">{item}</li>
     ))}
   </StyledTools>
 )

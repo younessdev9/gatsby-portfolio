@@ -36,6 +36,7 @@ const StyledContact = styled.div`
     }
     input,
     textarea {
+      width: 100%;
       font-family: Montserrat;
       font-style: normal;
       font-weight: normal;
@@ -71,6 +72,9 @@ const StyledContact = styled.div`
     input:focus::placeholder label {
       transform: translateY(3rem);
     }
+  }
+  @media only screen and (min-width: ${({ theme }) => theme.desktop}) {
+    padding: 8rem;
   }
 `
 export default StyledContact

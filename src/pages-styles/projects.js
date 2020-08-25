@@ -81,6 +81,9 @@ const StyledProjects = styled.div`
       }
     }
   }
+  @media only screen and (min-width: ${({ theme }) => theme.desktop}) {
+    padding: 4rem;
+  }
 `
 
 export default StyledProjects

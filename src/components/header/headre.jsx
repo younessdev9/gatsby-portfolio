@@ -23,17 +23,17 @@ const Header = ({ toggle, checked, open, setOpen }) => (
             About
           </Link>
         </li>
-        <li className="list-item">
+        <li>
           <Link to="/projects" activeClassName="active">
             Projects
           </Link>
         </li>
-        <li className="list-item">
+        <li>
           <Link to="/blog" activeClassName="active">
             Blog
           </Link>
         </li>
-        <li className="list-item">
+        <li>
           <Link to="/contact" activeClassName="active">
             Contact
           </Link>

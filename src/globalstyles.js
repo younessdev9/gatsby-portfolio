@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components"
 
 export const lightTheme = {
   mode: "light",
-  primaryColor: "#2a9d8f",
+  primaryColor: "#2a9d8f", //#63b6ff
   darkColor: "#202124",
   socialColor: "#000000",
   borderBottom: ".4rem solid #2a9d8f",
@@ -18,11 +18,9 @@ export const lightTheme = {
   laptop: "1024px",
   laptopL: "1440px",
   desktop: "2560px",
-  //added
-
+  //BURGER MENU
   primaryDark: "#0D0C1D",
-  primaryLight: "#EFFFFA",
-  primaryHover: "#343078",
+  primaryLight: "#F5F5F5",
   mobile: "576px",
 }
 
@@ -49,11 +47,10 @@ export const darkTheme = {
   laptopL: "1440px",
   desktop: "2560px",
 
-  //adedd
+  //  BURGER MENU THEME
 
-  primaryDark: "#0D0C1D",
-  primaryLight: "#EFFFFA",
-  primaryHover: "#343078",
+  primaryDark: "#FFFFFF",
+  primaryLight: "#333333",
   mobile: "576px",
 }
 
@@ -67,6 +64,9 @@ export const Globalstyles = createGlobalStyle`
 }
   html {
     font-size: 62.5%;
+    @media only screen and (min-width: ${({ theme }) => theme.desktop}) {
+      margin: 0 auto;
+    }
   }
   body {
     font-size: 1.7rem;
@@ -75,5 +75,8 @@ export const Globalstyles = createGlobalStyle`
       props.theme.mode === "dark" ? props.theme.darkColor : "#FFFFFF"};
     color: ${props => (props.theme.mode === "dark" ? "#F5F5F5" : "#202124")};
     padding: 7rem 1rem 1rem 1rem;
+    @media only screen and (min-width: ${({ theme }) => theme.desktop}) {
+    padding: 7rem 0 1rem 4rem;
+  }
   }
 `

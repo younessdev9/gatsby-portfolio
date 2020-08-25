@@ -8,6 +8,8 @@ export const StyledHeader = styled.nav`
   border-bottom: 1px #333333 solid;
   background-color: ${({ theme }) => theme.buttonBg};
   z-index: 100;
+  padding-top: 1rem;
+
   .header-wrapper {
     display: flex;
     align-items: center;
@@ -35,7 +37,7 @@ export const StyledHeader = styled.nav`
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    width: 45%;
+    width: 50rem;
   }
 
   ul li {
@@ -48,6 +50,19 @@ export const StyledHeader = styled.nav`
       padding: 0.9rem;
     }
   }
+  /* @media only screen and (min-width: ${({ theme }) => theme.desktop}) {
+    width: 200rem;
+  } */
+
+  @media only screen and (max-width: 900px) {
+    .header-wrapper {
+      margin: 0;
+    }
+    ul {
+      margin-right: 0;
+    }
+  }
+
   @media only screen and (max-width: ${({ theme }) => theme.tablet}) {
     ul {
       display: none;

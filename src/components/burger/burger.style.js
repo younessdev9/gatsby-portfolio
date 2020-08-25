@@ -5,7 +5,7 @@ export const StyledBurger = styled.button`
   @media only screen and (max-width: ${({ theme }) => theme.tablet}) {
     position: absolute;
     top: 5%;
-    right: 2rem;
+    right: 4rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -24,13 +24,12 @@ export const StyledBurger = styled.button`
     div {
       width: 100%;
       height: 0.5rem;
-      background: ${({ theme, open }) =>
-        open ? theme.primaryDark : theme.primaryLight};
+      background:
       border-radius: 10px;
       transition: all 0.3s linear;
       position: relative;
       transform-origin: 1px;
-
+      background-color: ${({ theme }) => theme.primaryDark};
       :first-child {
         transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
       }
@@ -47,3 +46,5 @@ export const StyledBurger = styled.button`
     }
   }
 `
+// ${({ theme, open }) =>
+//         open ? theme.primaryDark : theme.primaryLight};
