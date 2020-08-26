@@ -3,9 +3,9 @@ import styled from "styled-components"
 export const StyledBurger = styled.button`
   display: none;
   @media only screen and (max-width: ${({ theme }) => theme.tablet}) {
-    position: absolute;
+    /* position: absolute;
     top: 5%;
-    right: 4rem;
+    right: 4rem; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -14,7 +14,6 @@ export const StyledBurger = styled.button`
     background: transparent;
     border: none;
     cursor: pointer;
-    padding: 0;
     z-index: 111;
 
     &:focus {

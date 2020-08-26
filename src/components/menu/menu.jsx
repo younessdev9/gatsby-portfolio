@@ -7,10 +7,17 @@ import Logo from "../assets/thefinal.svg"
 const Menu = ({ open, setOpen, toggle, checked }) => {
   return (
     <StyledMenu open={open}>
-      <Link to="/" className="logo" onClick={() => setOpen(!open)}>
-        <Logo />
-      </Link>
-      <Burger open={open} setOpen={setOpen} className="burger-menu" />
+      <div className="head">
+        <Link to="/" className="logo" onClick={() => setOpen(!open)}>
+          <Logo />
+        </Link>
+        <Burger
+          open={open}
+          setOpen={setOpen}
+          className="burger-menu"
+          id="close-btn"
+        />
+      </div>
       <ul>
         <li>
           <Link to="/" onClick={() => setOpen(!open)}>

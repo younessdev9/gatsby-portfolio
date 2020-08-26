@@ -21,6 +21,7 @@ const StyledAbout = styled.div`
       border-radius: 5px;
       transition: all 0.3s ease-out;
       margin: 2rem;
+      width: 50%;
       &:hover {
         transform: scale(1.02);
         box-shadow: 4px 4px 8px #33333380;
@@ -28,7 +29,8 @@ const StyledAbout = styled.div`
     }
 
     .info-wrapper {
-      width: 50%;
+      max-width: 79rem;
+      min-width: 60rem;
 
       p {
         padding: 1rem;
@@ -83,6 +85,37 @@ const StyledAbout = styled.div`
           }
         }
       }
+    }
+  }
+
+  @media only screen and (max-width: ${({ theme }) => theme.laptop}) {
+    .container {
+      margin: 0;
+      padding: 1rem;
+    }
+  }
+
+  @media only screen and (max-width: ${({ theme }) => theme.tabletL}) {
+    .container {
+      .info-wrapper {
+        max-width: none;
+        min-width: none;
+        width: 69%;
+        margin-bottom: 4rem;
+      }
+    }
+  }
+
+  @media only screen and (max-width: ${({ theme }) => theme.mobileL}) {
+    .container {
+      width: 110%;
+      .info-wrapper {
+        min-width: auto;
+      }
+    }
+    .img-container {
+      width: 28.3rem;
+      height: 32.7rem;
     }
   }
 `

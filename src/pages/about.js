@@ -45,16 +45,14 @@ const About = () => {
               <div className="sub-info">
                 <MdEmail className="icon" />
                 <p>
-                  <a href="mailto:hassani.youness1999@gmail.com">
-                    hassani.youness1999@gmail.com
-                  </a>
+                  <a href="mailto:younessdev@yahoo.com">younessdev@yahoo.com</a>
                 </p>
               </div>
 
               <div className="sub-info">
                 <MdPhone className="icon" />
                 <p>
-                  <a href="tel:+2120651070251">+2120651070251</a>
+                  <a href="tel:+212651070251">+212651070251</a>
                 </p>
               </div>
             </div>

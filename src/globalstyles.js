@@ -14,10 +14,13 @@ export const lightTheme = {
   mobileS: "320px",
   mobileM: "375px",
   mobileL: "425px",
+  mobileX: "500px",
   tablet: "768px",
+  tabletL: "796px",
   laptop: "1024px",
   laptopL: "1440px",
   desktop: "2560px",
+
   //BURGER MENU
   primaryDark: "#0D0C1D",
   primaryLight: "#F5F5F5",
@@ -42,7 +45,9 @@ export const darkTheme = {
   mobileS: "320px",
   mobileM: "375px",
   mobileL: "425px",
+  mobileX: "500px",
   tablet: "768px",
+  tabletL: "796px",
   laptop: "1024px",
   laptopL: "1440px",
   desktop: "2560px",
@@ -77,6 +82,9 @@ export const Globalstyles = createGlobalStyle`
     padding: 7rem 1rem 1rem 1rem;
     @media only screen and (min-width: ${({ theme }) => theme.desktop}) {
     padding: 7rem 0 1rem 4rem;
+  }
+  @media only screen and (max-width: ${({ theme }) => theme.mobileL}) {
+    padding: 7rem 0 0 0;
   }
   }
 `

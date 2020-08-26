@@ -75,4 +75,37 @@ export const StyledSection = styled.section`
       }
     }
   }
+
+  @media only screen and (max-width: ${({ theme }) => theme.tabletL}) {
+    .right-section {
+      .myicon {
+        max-width: 44rem;
+        height: 39rem;
+      }
+    }
+  }
+  @media only screen and (max-width: ${({ theme }) => theme.mobileL}) {
+    .left-section {
+      align-items: center;
+      width: 35rem;
+      flex-basis: 400rem;
+      padding: 0;
+      h3 {
+        padding: 0 2rem;
+      }
+
+      .btns {
+        width: 70%;
+      }
+    }
+
+    .right-section {
+      padding: 0;
+
+      .myicon {
+        max-width: 27rem;
+        height: 30rem;
+      }
+    }
+  }
 `

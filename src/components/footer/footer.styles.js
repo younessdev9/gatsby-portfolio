@@ -7,7 +7,6 @@ const StyledFooter = styled.footer`
   align-items: center;
   flex-wrap: wrap;
   padding: 1rem;
-  width: 100%;
   *:not(.gatsby-logo) {
     margin: 0.6rem;
   }
@@ -39,6 +38,10 @@ const StyledFooter = styled.footer`
     h4 {
       margin: 1.3rem;
     }
+  }
+
+  @media only screen and (min-width: ${({ theme }) => theme.laptop}) {
+    flex-direction: column;
   }
 `
 

@@ -33,4 +33,10 @@ export const StyledBtn = styled.button`
     height: 4.4rem;
     margin: 1rem;
   }
+
+  @media only screen and (max-width: ${({ theme }) => theme.mobileL}) {
+    width: 11rem;
+    height: 4rem;
+    font-size: 1.6rem;
+  }
 `

@@ -75,4 +75,18 @@ export const StyledSkills = styled.div`
       justify-content: center;
     }
   }
+
+  @media (max-width: ${({ theme }) => theme.mobileL}) {
+    .skill-item {
+      height: 32rem;
+      width: 27rem;
+      h3 {
+        font-size: 2rem;
+      }
+    }
+    .skill-icon {
+      width: 23rem;
+      height: 26rem;
+    }
+  }
 `

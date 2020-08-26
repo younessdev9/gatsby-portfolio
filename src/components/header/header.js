@@ -27,7 +27,9 @@ export const StyledHeader = styled.nav`
     width: 10rem;
     height: 8.7rem;
   }
+  .burger-menu {
 
+  }
   .active {
     border-bottom: ${props => props.theme.borderBottom};
   }
@@ -76,4 +78,23 @@ export const StyledHeader = styled.nav`
       }
     }
   }
+
+  @media only screen and (max-width: ${({ theme }) => theme.mobileL}) {
+    .header-wrapper {
+      width: 93%;
+    }
+    .logo {
+    width: 7rem;
+    height: 7rem;
+  }
+  }
+
+  @media only screen and (min-width: ${({ theme }) => theme.mobileL}) {
+    .header-wrapper {
+      width: 93%;
+    }
+  }
 `
+// //    .header-wrapper {
+//   width: 40rem;
+// }
