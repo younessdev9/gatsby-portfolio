@@ -7,7 +7,22 @@ const StyledContact = styled.div`
   display: flex;
   flex-direction: column;
   padding: 3rem;
+  .loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 111;
+    height: 100vh;
+    width: 100vw;
+    background-color: #3333;
 
+    .spinner {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
   p,
   label {
     font-family: Montserrat;
@@ -79,7 +94,7 @@ const StyledContact = styled.div`
 
   @media only screen and (max-width: ${({ theme }) => theme.mobileX}) {
     max-width: 98%;
-    padding: 0.9rem;
+    padding: 0.4rem;
     align-items: center;
     form {
       input,

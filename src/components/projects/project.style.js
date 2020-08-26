@@ -10,8 +10,6 @@ const StyledProjects = styled.div`
   margin: 3rem auto 10rem auto;
 
   h2 {
-    font-family: Montserrat;
-    font-style: normal;
     font-weight: normal;
     font-size: 3.5rem;
     line-height: 4rem;
@@ -99,6 +97,27 @@ const StyledProjects = styled.div`
 
   @media only screen and (max-width: ${({ theme }) => theme.tabletL}) {
     padding: 0;
+  }
+  @media only screen and (max-width: ${({ theme }) => theme.mobileX}) {
+    h2 {
+      font-size: 2rem;
+      line-height: 3rem;
+    }
+    .cards-container {
+      margin: 2rem 0;
+
+      .project-card {
+        width: 69%;
+        margin: 1rem 0;
+      }
+    }
+
+    .project-card-title {
+      font-weight: normal;
+      font-size: 1.9rem;
+      width: 100%;
+      margin-top: 1rem;
+    }
   }
 `
 export default StyledProjects

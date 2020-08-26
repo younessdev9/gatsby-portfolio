@@ -5,6 +5,7 @@ export const StyledHeader = styled.nav`
   font-size: 1.8rem;
   position: fixed;
   top: 0;
+
   border-bottom: 1px #333333 solid;
   background-color: ${({ theme }) => theme.buttonBg};
   z-index: 100;
@@ -94,6 +95,8 @@ export const StyledHeader = styled.nav`
       width: 93%;
     }
   }
+  left
+  :0;
 `
 // //    .header-wrapper {
 //   width: 40rem;

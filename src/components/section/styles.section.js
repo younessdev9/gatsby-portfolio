@@ -2,15 +2,14 @@ import styled from "styled-components"
 export const StyledSection = styled.section`
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   flex-wrap: wrap;
   padding: 3rem;
 
   .left-section {
     display: flex;
     flex-direction: column;
-    padding: 6rem 2rem;
     h3 {
-      font-family: inherit;
       font-size: 4rem;
       font-weight: 500;
       line-height: 5.4rem;
@@ -27,6 +26,7 @@ export const StyledSection = styled.section`
       text-align: center;
       margin-top: 5rem;
       max-width: 57rem;
+      color: ${({ theme }) => theme.lightgreyTextColor};
     }
     .btns {
       display: flex;
@@ -90,6 +90,7 @@ export const StyledSection = styled.section`
       width: 100%;
       flex-basis: 400rem;
       padding: 0;
+    margin: 4rem 0;
       h3 {
         padding: 0 2rem;
       }
@@ -108,4 +109,31 @@ export const StyledSection = styled.section`
       }
     }
   }
+
+  @media only screen and (max-width: ${({ theme }) => theme.mobileX}) {
+    padding: 0;
+    .right-section {
+      .myicon {
+        max-width: 50%;
+      }
+    }
+
+    .left-section {
+    display: flex;
+    flex-direction: column;
+    padding:0;
+
+    .btns {
+      width: 70%;
+    }
+    h3 {
+      font-size: 3rem;
+      font-weight: 500;
+      font-style: normal;
+      .hi {
+         display: none;
+      }
+    }
+  }
+
 `

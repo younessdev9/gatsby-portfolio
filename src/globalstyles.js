@@ -11,9 +11,10 @@ export const lightTheme = {
   btnHoverColor: "#F5F5F5",
   submitBtnBgColor: "#f5f5f5",
   anchortagColor: "red",
-  mobileS: "320px",
-  mobileM: "375px",
-  mobileL: "425px",
+  //text color
+  lightgreyTextColor: "#6C757D",
+  mobileL: "500px",
+  mobileXL: "450px",
   mobileX: "500px",
   tablet: "768px",
   tabletL: "796px",
@@ -37,14 +38,15 @@ export const darkTheme = {
   borderBottom: ".6rem solid #2a9d8f",
   buttonBg: "#202124",
   buttonColor: "#F5F5F5",
+  //text color
+  lightgreyTextColor: "#6c757d",
   boxShadow: "0 7px 10px #F5F5F5",
   btnColor: "#202124",
   btnHoverColor: "#F5F5F5",
   submitBtnBgColor: "#2a9d8f",
   anchortagColor: "#F5F5F5",
-  mobileS: "320px",
-  mobileM: "375px",
-  mobileL: "425px",
+  mobileL: "500px",
+  mobileXL: "450px",
   mobileX: "500px",
   tablet: "768px",
   tabletL: "796px",
@@ -79,12 +81,13 @@ export const Globalstyles = createGlobalStyle`
     background-color: ${props =>
       props.theme.mode === "dark" ? props.theme.darkColor : "#FFFFFF"};
     color: ${props => (props.theme.mode === "dark" ? "#F5F5F5" : "#202124")};
-    padding: 7rem 1rem 1rem 1rem;
+    padding: 7rem 1rem 1rem 1rem; */
+    overflow-x: hidden;
     @media only screen and (min-width: ${({ theme }) => theme.desktop}) {
     padding: 7rem 0 1rem 4rem;
-  }
-  @media only screen and (max-width: ${({ theme }) => theme.mobileL}) {
-    padding: 7rem 0 0 0;
-  }
+    }
+    @media only screen and (max-width: ${({ theme }) => theme.mobileL}) {
+      padding: 7rem 0 0 0;
+    }
   }
 `
