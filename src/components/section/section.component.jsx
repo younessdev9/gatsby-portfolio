@@ -9,7 +9,8 @@ const Section = () => {
     <StyledSection>
       <div className="left-section">
         <h3>
-          Hi there! <br />I<span>'</span>m <span>Y</span>ouness <span>H</span>
+          <span className="hi">Hi there!</span> <br />I<span>'</span>m{" "}
+          <span>Y</span>ouness <span>H</span>
           assani
         </h3>
         <h4>

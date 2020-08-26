@@ -18,8 +18,6 @@ export const StyledSkills = styled.div`
   }
 
   h2 {
-    font-family: Montserrat;
-    font-style: normal;
     font-weight: normal;
     font-size: 3.5rem;
     line-height: 4rem;
@@ -87,6 +85,13 @@ export const StyledSkills = styled.div`
     .skill-icon {
       width: 23rem;
       height: 26rem;
+    }
+  }
+  @media (max-width: ${({ theme }) => theme.mobileX}) {
+    h2 {
+      font-weight: normal;
+      font-size: 2rem;
+      line-height: 3rem;
     }
   }
 `

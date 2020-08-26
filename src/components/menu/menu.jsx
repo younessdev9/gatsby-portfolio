@@ -6,7 +6,7 @@ import { StyledMenu } from "./menu.styled"
 import Logo from "../assets/thefinal.svg"
 const Menu = ({ open, setOpen, toggle, checked }) => {
   return (
-    <StyledMenu open={open}>
+    <StyledMenu open={open} onClick={() => setOpen(!open)}>
       <div className="head">
         <Link to="/" className="logo" onClick={() => setOpen(!open)}>
           <Logo />
@@ -20,29 +20,19 @@ const Menu = ({ open, setOpen, toggle, checked }) => {
       </div>
       <ul>
         <li>
-          <Link to="/" onClick={() => setOpen(!open)}>
-            Home
-          </Link>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/about" onClick={() => setOpen(!open)}>
-            About
-          </Link>
+          <Link to="/about">About</Link>
         </li>
         <li>
-          <Link to="/projects" onClick={() => setOpen(!open)}>
-            Projects
-          </Link>
+          <Link to="/projects">Projects</Link>
         </li>
         <li>
-          <Link to="/blog" onClick={() => setOpen(!open)}>
-            Blog
-          </Link>
+          <Link to="/blog">Blog</Link>
         </li>
         <li>
-          <Link to="/contact" onClick={() => setOpen(!open)}>
-            Contact
-          </Link>
+          <Link to="/contact">Contact</Link>
         </li>
         <li>
           <DarkModeToggle
