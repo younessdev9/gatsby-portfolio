@@ -87,7 +87,7 @@ export const StyledSection = styled.section`
   @media only screen and (max-width: ${({ theme }) => theme.mobileL}) {
     .left-section {
       align-items: center;
-      width: 35rem;
+      width: 100%;
       flex-basis: 400rem;
       padding: 0;
       h3 {
@@ -95,7 +95,7 @@ export const StyledSection = styled.section`
       }
 
       .btns {
-        width: 70%;
+        width: 75%;
       }
     }
 
