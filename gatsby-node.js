@@ -1,14 +1,22 @@
+const path = require("path")
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   const result = await graphql(`
     {
-      allContentfulBlog(filter: { node_locale: { eq: "en-US" } }) {
+      blog: allContentfulBlog(filter: { node_locale: { eq: "en-US" } }) {
         nodes {
           slug
         }
       }
     }
   `)
-
-  console.log(result)
+  result.data.blog.nodes.forEach(element => {
+    createPage({
+      path: `/blog/${element.slug}`,
+      component: path.resolve(`src/templates/blog.js`),
+      context: {
+        slug: element.slug,
+      },
+    })
+  })
 }

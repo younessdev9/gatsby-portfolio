@@ -18,19 +18,20 @@ const StyledAbout = styled.div`
     margin: 2rem 1rem;
     padding: 2rem;
     .img-container {
-      width: 40rem;
       border-radius: 5px;
       transition: all 0.3s ease-out;
       margin: 2rem;
+      width: 50%;
       &:hover {
-        outline: 1rem solid ${({ theme }) => theme.primaryColor};
-        outline-offset: 2rem;
-        transform: scale(1.06);
+        transform: scale(1.02);
+        box-shadow: 4px 4px 8px #33333380;
       }
     }
 
     .info-wrapper {
-      width: 50%;
+      max-width: 79rem;
+      min-width: 60rem;
+
       p {
         padding: 1rem;
       }
@@ -73,91 +74,50 @@ const StyledAbout = styled.div`
       }
     }
   }
+
+  @media only screen and (min-width: ${({ theme }) => theme.desktop}) {
+    min-height: 88vh;
+    .container {
+      .info-wrapper {
+        .langagues-tools {
+          .tools-title {
+            margin-bottom: 3rem;
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: ${({ theme }) => theme.laptop}) {
+    .container {
+      margin: 0;
+      padding: 1rem;
+    }
+  }
+
+  @media only screen and (max-width: ${({ theme }) => theme.tabletL}) {
+    .container {
+      .info-wrapper {
+        max-width: none;
+        min-width: none;
+        width: 69%;
+        margin-bottom: 4rem;
+      }
+    }
+  }
+
+  @media only screen and (max-width: ${({ theme }) => theme.mobileL}) {
+    .container {
+      width: 110%;
+      .info-wrapper {
+        min-width: auto;
+      }
+    }
+    .img-container {
+      width: 28.3rem;
+      height: 32.7rem;
+    }
+  }
 `
 
 export default StyledAbout
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   padding: 2rem;
-//   h3 {
-//     font-family: Montserrat;
-//     font-style: normal;
-//     font-size: 3.7rem;
-//     line-height: 4.5rem;
-//     border-bottom: 4px solid #2a9d8f;
-//     margin-bottom: 4rem;
-//   }
-
-//   .info-container {
-//     display: flex;
-//     justify-content: space-around;
-//     align-items: flex-start;
-//     flex-wrap: wrap;
-
-//   .personal-img {
-
-//     width: 26%;
-//
-//     margin-left: 2rem;
-//
-//     flex-basis: 50%;
-//     &:hover {
-//       outline: 1rem solid ${({ theme }) => theme.primaryColor};
-//       outline-offset: 2rem;
-//       transform: scale(1.06);
-//     }
-//   }
-//   .right-info {
-//     display: flex;
-//     flex-direction: column;
-//     width: 50%;
-//     height: 43rem;
-//     p {
-//       font-family: Montserrat;
-//       font-style: normal;
-//       font-weight: normal;
-//       font-size: 2rem;
-//       line-height: 3rem;
-//       letter-spacing: -0.025em;
-//       flex-grow: 1;
-//       color: {({theme}) => theme.anchortagColor}
-//     }a
-
-//     .info {
-//       margin-top: 3rem;
-//       .sub-info {
-//         display flex;
-//         justify-content: space-between;
-//         margin: 1.4rem 0;
-//         align-items: center;
-//         width: 100%;
-//         p a {
-//           color: inherit;
-//         }
-//         .icon {
-//           height: 2.8rem;
-//           width: 2.8rem;
-//           margin-right: 2rem;
-//         }
-//       }
-//     }
-//     .langagues-tools {
-//       display: flex;
-//       flex-direction: column;
-//       align-items: flex-start;
-//       flex-wrap: wrap;
-//       .tools-title {
-//         border-bottom: 2px solid ${({ theme }) => theme.primaryColor};
-//         font-style: normal;
-//         font-size: 2.7rem;
-//         font-weight: 500;
-//         line-height: 4rem;
-//         margin: 2rem 0;
-//       }
-//       .tools {
-//         width: 100%;
-//       }
-//     }
-//   }
-//   }

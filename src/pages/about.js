@@ -11,8 +11,8 @@ const About = () => {
     {
       file(relativePath: { eq: "Myimage.png" }) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid_tracedSVG
+          fixed(width: 320) {
+            ...GatsbyImageSharpFixed_noBase64
           }
         }
       }
@@ -23,9 +23,10 @@ const About = () => {
       <StyledAbout>
         <h2>About me</h2>
         <div className="container">
-          <div className="img-container">
-            <Img fluid={data.file.childImageSharp.fluid} />
-          </div>
+          <Img
+            fixed={data.file.childImageSharp.fixed}
+            className="img-container"
+          />
           <div className="info-wrapper">
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -44,16 +45,14 @@ const About = () => {
               <div className="sub-info">
                 <MdEmail className="icon" />
                 <p>
-                  <a href="mailto:hassani.youness1999@gmail.com">
-                    hassani.youness1999@gmail.com
-                  </a>
+                  <a href="mailto:younessdev@yahoo.com">younessdev@yahoo.com</a>
                 </p>
               </div>
 
               <div className="sub-info">
                 <MdPhone className="icon" />
                 <p>
-                  <a href="tel:+2120651070251">+2120651070251</a>
+                  <a href="tel:+212651070251">+212651070251</a>
                 </p>
               </div>
             </div>

@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components"
 
 export const lightTheme = {
   mode: "light",
-  primaryColor: "#2a9d8f",
+  primaryColor: "#2a9d8f", //#63b6ff
   darkColor: "#202124",
   socialColor: "#000000",
   borderBottom: ".4rem solid #2a9d8f",
@@ -11,6 +11,20 @@ export const lightTheme = {
   btnHoverColor: "#F5F5F5",
   submitBtnBgColor: "#f5f5f5",
   anchortagColor: "red",
+  mobileS: "320px",
+  mobileM: "375px",
+  mobileL: "425px",
+  mobileX: "500px",
+  tablet: "768px",
+  tabletL: "796px",
+  laptop: "1024px",
+  laptopL: "1440px",
+  desktop: "2560px",
+
+  //BURGER MENU
+  primaryDark: "#0D0C1D",
+  primaryLight: "#F5F5F5",
+  mobile: "576px",
 }
 
 export const darkTheme = {
@@ -28,6 +42,21 @@ export const darkTheme = {
   btnHoverColor: "#F5F5F5",
   submitBtnBgColor: "#2a9d8f",
   anchortagColor: "#F5F5F5",
+  mobileS: "320px",
+  mobileM: "375px",
+  mobileL: "425px",
+  mobileX: "500px",
+  tablet: "768px",
+  tabletL: "796px",
+  laptop: "1024px",
+  laptopL: "1440px",
+  desktop: "2560px",
+
+  //  BURGER MENU THEME
+
+  primaryDark: "#FFFFFF",
+  primaryLight: "#333333",
+  mobile: "576px",
 }
 
 export const Globalstyles = createGlobalStyle`
@@ -40,6 +69,9 @@ export const Globalstyles = createGlobalStyle`
 }
   html {
     font-size: 62.5%;
+    @media only screen and (min-width: ${({ theme }) => theme.desktop}) {
+      margin: 0 auto;
+    }
   }
   body {
     font-size: 1.7rem;
@@ -48,5 +80,11 @@ export const Globalstyles = createGlobalStyle`
       props.theme.mode === "dark" ? props.theme.darkColor : "#FFFFFF"};
     color: ${props => (props.theme.mode === "dark" ? "#F5F5F5" : "#202124")};
     padding: 7rem 1rem 1rem 1rem;
+    @media only screen and (min-width: ${({ theme }) => theme.desktop}) {
+    padding: 7rem 0 1rem 4rem;
+  }
+  @media only screen and (max-width: ${({ theme }) => theme.mobileL}) {
+    padding: 7rem 0 0 0;
+  }
   }
 `

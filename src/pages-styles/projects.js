@@ -60,7 +60,7 @@ const StyledProjects = styled.div`
       .icon {
         width: 4rem;
         height: 4.3rem;
-        fill: #f5f5f5;
+        fill: #fff;
         &:hover {
           transform: scale(1.1);
           fill: #2a9d8f;
@@ -78,6 +78,27 @@ const StyledProjects = styled.div`
         border: 2px solid #2a9d8f;
         padding: 0.6rem;
         border-radius: 0.4rem;
+      }
+    }
+  }
+  @media only screen and (min-width: ${({ theme }) => theme.desktop}) {
+    padding: 4rem;
+  }
+
+  @media only screen and (max-width: ${({ theme }) => theme.mobileL}) {
+    /* background-color: red; */
+    .project-card {
+      height: auto;
+      margin-bottom: 1rem;
+      :last-child {
+        margin-bottom: 6rem;
+      }
+      .img-wrapper {
+        width: 36rem;
+        .icon {
+          width: 3.2rem;
+          height: 3.3rem;
+        }
       }
     }
   }

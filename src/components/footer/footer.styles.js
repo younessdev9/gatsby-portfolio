@@ -5,15 +5,15 @@ const StyledFooter = styled.footer`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem;
-  background-color: ${({ theme }) => theme.primaryColor}
+  flex-wrap: wrap;
+  padding: 1rem;
   *:not(.gatsby-logo) {
     margin: 0.6rem;
   }
   h4 {
-    font-style: normal;
+    font-size: 1.4rem;
+    min-width: 30rem;
     font-weight: normal;
-    font-size: 1.3rem;
     .gatsby-logo {
       width: 1.6rem;
       height: 1.6rem;
@@ -32,15 +32,16 @@ const StyledFooter = styled.footer`
       font-weight: bold;
     }
   }
-  .footer-social {
-    width: 20%;
-    justify-content: space-between;
-    display: flex;
-    p a {
-      font-weight: 500;
-      text-decoration: none;
-      color: inherit;
+  @media only screen and (max-width: ${({ theme }) => theme.laptop}) {
+    justify-content: center;
+
+    h4 {
+      margin: 1.3rem;
     }
+  }
+
+  @media only screen and (min-width: ${({ theme }) => theme.laptop}) {
+    flex-direction: column;
   }
 `
 

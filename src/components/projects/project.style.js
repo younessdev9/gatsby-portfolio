@@ -96,5 +96,9 @@ const StyledProjects = styled.div`
     }
     height: 3rem;
   }
+
+  @media only screen and (max-width: ${({ theme }) => theme.tabletL}) {
+    padding: 0;
+  }
 `
 export default StyledProjects

@@ -27,4 +27,16 @@ export const StyledBtn = styled.button`
     background-color: ${({ theme }) => theme.primaryColor};
     color: ${({ theme }) => theme.btnHoverColor};
   }
+
+  @media only screen and (max-width: ${({ theme }) => theme.laptop}) {
+    width: 15rem;
+    height: 4.4rem;
+    margin: 1rem;
+  }
+
+  @media only screen and (max-width: ${({ theme }) => theme.mobileL}) {
+    width: 11rem;
+    height: 4rem;
+    font-size: 1.6rem;
+  }
 `

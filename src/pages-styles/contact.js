@@ -14,7 +14,7 @@ const StyledContact = styled.div`
     font-style: normal;
     font-weight: normal;
     font-size: 2.2rem;
-    line-height: 2.9rem;
+    line-height: 3rem;
   }
   p a {
     font-weight: bold;
@@ -36,6 +36,7 @@ const StyledContact = styled.div`
     }
     input,
     textarea {
+      width: 100%;
       font-family: Montserrat;
       font-style: normal;
       font-weight: normal;
@@ -51,11 +52,12 @@ const StyledContact = styled.div`
       }
     }
     input[type="submit"] {
-      width: 20rem;
+      width: 19rem;
+      height: 3.2rem;
       align-self: center;
       margin-top: 3rem;
       background-color: ${({ theme }) => theme.primaryColor};
-      color: #f5f5f5;
+      color: #ffffff;
       transition: all 0.3s ease-out;
       &:hover {
         box-shadow: 0 1rem 2rem #21212180;
@@ -63,13 +65,52 @@ const StyledContact = styled.div`
       }
     }
     textarea {
-      min-width: 100%;
-      max-width: 100%;
+      resize: vertical;
       min-height: 10rem;
     }
 
     input:focus::placeholder label {
       transform: translateY(3rem);
+    }
+  }
+  @media only screen and (min-width: ${({ theme }) => theme.desktop}) {
+    padding: 8rem;
+  }
+
+  @media only screen and (max-width: ${({ theme }) => theme.mobileX}) {
+    max-width: 98%;
+    padding: 0.9rem;
+    align-items: center;
+    form {
+      input,
+      textarea {
+        width: 96%;
+      }
+      textarea {
+        min-height: 8rem;
+      }
+
+      input[type="submit"] {
+        height: 3rem;
+        width: 16rem;
+      }
+    }
+
+    p,
+    label {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 2rem;
+    }
+    p {
+      text-align: center;
+      margin-top: 3rem;
+    }
+    p a {
+      letter-spacing: 1px;
+      font-size: 2.4;
+      color: #00bbf9;
     }
   }
 `

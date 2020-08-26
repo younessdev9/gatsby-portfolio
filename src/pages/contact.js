@@ -7,10 +7,9 @@ const Contact = () => (
     <StyledContact>
       <p>
         You can send me email to: &nbsp;
-        <a href="mailto:hassani.youness1999@gmail.com">
-          hassani.youness1999@gmail.com
-        </a>{" "}
-        <br /> or fill the form below:
+        <a href="mailto:younessdev@yahoo.com">
+          younessdev@yahoo.com
+        </a> <br /> or fill the form below:
       </p>
       <form>
         <label htmlFor="full-name">Full Name:</label>

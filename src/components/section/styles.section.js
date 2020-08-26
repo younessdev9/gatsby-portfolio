@@ -5,10 +5,6 @@ export const StyledSection = styled.section`
   flex-wrap: wrap;
   padding: 3rem;
 
-  .icons {
-    height: 4rem;
-    width: 4rem;
-  }
   .left-section {
     display: flex;
     flex-direction: column;
@@ -20,13 +16,11 @@ export const StyledSection = styled.section`
       line-height: 5.4rem;
       font-style: normal;
       span {
-        color: #2a9d8f;
+        color: ${({ theme }) => theme.primaryColor};
         font-family: inherit;
       }
     }
     h4 {
-      font-family: inherit;
-      font-style: normal;
       font-weight: normal;
       font-size: 2rem;
       line-height: 3rem;
@@ -50,6 +44,68 @@ export const StyledSection = styled.section`
     .myicon {
       max-width: 50rem;
       height: 50rem;
+    }
+  }
+
+  @media only screen and (max-width: ${({ theme }) => theme.laptop}) {
+    padding: 2rem;
+    .left-section {
+      padding: 3rem 2rem;
+      h3 {
+        font-size: 3rem;
+        line-height: 4rem;
+      }
+      h4 {
+        margin-top: 3rem;
+      }
+
+      .btns {
+        width: 40rem;
+        margin-top: 5rem;
+      }
+    }
+
+    .right-section {
+      justify-content: center;
+      padding: 1rem;
+      height: 90%;
+      .myicon {
+        max-width: 50rem;
+        height: 50rem;
+      }
+    }
+  }
+
+  @media only screen and (max-width: ${({ theme }) => theme.tabletL}) {
+    .right-section {
+      .myicon {
+        max-width: 44rem;
+        height: 39rem;
+      }
+    }
+  }
+  @media only screen and (max-width: ${({ theme }) => theme.mobileL}) {
+    .left-section {
+      align-items: center;
+      width: 35rem;
+      flex-basis: 400rem;
+      padding: 0;
+      h3 {
+        padding: 0 2rem;
+      }
+
+      .btns {
+        width: 70%;
+      }
+    }
+
+    .right-section {
+      padding: 0;
+
+      .myicon {
+        max-width: 27rem;
+        height: 30rem;
+      }
     }
   }
 `

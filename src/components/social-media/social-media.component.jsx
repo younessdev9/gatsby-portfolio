@@ -10,12 +10,8 @@ const links = data.map(({ id, icon, url }) => (
     </a>
   </li>
 ))
-const Social = ({ width, height }) => {
-  return (
-    <StyledSocial width={width} height={height}>
-      {links}
-    </StyledSocial>
-  )
+const Social = () => {
+  return <StyledSocial>{links}</StyledSocial>
 }
 
 export default Social

@@ -1,7 +1,6 @@
 import styled from "styled-components"
 
 export const StyledSkills = styled.div`
-  /* background-color: #c4c4c4; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,7 +12,7 @@ export const StyledSkills = styled.div`
     height: 100%;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 6rem;
   }
@@ -37,7 +36,7 @@ export const StyledSkills = styled.div`
     border: 1px solid ${({ theme }) => theme.primaryColor};
     border-radius: 8px;
     transition: all 0.3s ease-out;
-    margin: 0.8rem;
+    margin: 1.4rem;
     padding: 0.4rem;
     &:hover {
       box-shadow: 4px 4px 10px -3px ${props => props.theme.blur},
@@ -62,5 +61,32 @@ export const StyledSkills = styled.div`
     font-size: 2.6rem;
     line-height: 3.2rem;
     text-align: center;
+  }
+
+  @media only screen and (max-width: ${({ theme }) => theme.laptop}) {
+    .cards {
+      justify-content: space-evenly;
+    }
+  }
+
+  @media (max-width: ${({ theme }) => theme.tablet}) {
+    .cards {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: ${({ theme }) => theme.mobileL}) {
+    .skill-item {
+      height: 32rem;
+      width: 27rem;
+      h3 {
+        font-size: 2rem;
+      }
+    }
+    .skill-icon {
+      width: 23rem;
+      height: 26rem;
+    }
   }
 `
