@@ -18,8 +18,8 @@ const StyledError = styled.div`
     text-align: center;
   }
   .error-illistration {
-    width: 60rem;
-    height: 40rem;
+    max-width: 60rem;
+    max-height: 40rem;
   }
 `
 

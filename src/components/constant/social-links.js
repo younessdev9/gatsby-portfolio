@@ -10,7 +10,7 @@ export const data = [
   {
     id: 2,
     icon: <FaLinkedin className="social-icon" />,
-    url: "www.linkedin.com/in/younessdev",
+    url: "https://www.linkedin.com/in/youness-hassani-a9b058173/",
   },
   {
     id: 3,
