@@ -13,6 +13,7 @@ export const lightTheme = {
   anchortagColor: "red",
   //text color
   lightgreyTextColor: "#6C757D",
+  mobileM: "387px",
   mobileL: "500px",
   mobileXL: "450px",
   mobileX: "500px",
@@ -45,6 +46,7 @@ export const darkTheme = {
   btnHoverColor: "#F5F5F5",
   submitBtnBgColor: "#2a9d8f",
   anchortagColor: "#F5F5F5",
+  mobileM: "387px",
   mobileL: "500px",
   mobileXL: "450px",
   mobileX: "500px",

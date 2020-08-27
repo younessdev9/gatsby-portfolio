@@ -90,7 +90,7 @@ export const StyledSection = styled.section`
       width: 100%;
       flex-basis: 400rem;
       padding: 0;
-    margin: 4rem 0;
+      margin: 4rem 0;
       h3 {
         padding: 0 2rem;
       }
@@ -119,21 +119,40 @@ export const StyledSection = styled.section`
     }
 
     .left-section {
-    display: flex;
-    flex-direction: column;
-    padding:0;
+      display: flex;
+      flex-direction: column;
+      padding: 0;
 
-    .btns {
-      width: 70%;
-    }
-    h3 {
-      font-size: 3rem;
-      font-weight: 500;
-      font-style: normal;
-      .hi {
-         display: none;
+      .btns {
+        width: 70%;
+      }
+      h3 {
+        font-size: 3rem;
+        font-weight: 500;
+        font-style: normal;
+        .hi {
+          display: none;
+        }
       }
     }
   }
+  @media only screen and (max-width: ${({ theme }) => theme.mobileM}) {
+    .left-section {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
 
+      .btns {
+        width: 90%;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      h3 {
+        font-size: 2rem;
+      }
+      h4 {
+        width: 90%;
+      }
+    }
+  }
 `
