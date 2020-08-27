@@ -99,13 +99,16 @@ const StyledProjects = styled.div`
     padding: 0;
   }
   @media only screen and (max-width: ${({ theme }) => theme.mobileX}) {
+    margin: 2 auto;
+    padding: 0;
+    width: 90%;
     h2 {
       font-size: 2rem;
       line-height: 3rem;
     }
     .cards-container {
       margin: 2rem 0;
-
+      width: 90%;
       .project-card {
         width: 69%;
         margin: 1rem 0;
@@ -117,6 +120,20 @@ const StyledProjects = styled.div`
       font-size: 1.9rem;
       width: 100%;
       margin-top: 1rem;
+    }
+  }
+  /* MobileM 387px and less */
+  @media only screen and (max-width: ${({ theme }) => theme.mobileM}) {
+    .cards-container {
+      .project-card {
+        width: 88%;
+        height: auto;
+        .stuck {
+          li {
+            font-size: 1.3rem;
+          }
+        }
+      }
     }
   }
 `

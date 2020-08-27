@@ -4,7 +4,7 @@ import StyledBlog from "../pages-styles/blog"
 const Blog = () => (
   <Layout>
     <StyledBlog>
-      <h1>comming soon!</h1>
+      <h3>comming soon!</h3>
     </StyledBlog>
   </Layout>
 )

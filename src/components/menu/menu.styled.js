@@ -19,42 +19,32 @@ export const StyledMenu = styled.nav`
     transition: transform 0.3s ease-in-out;
     z-index: 100;
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(140%)")};
-    ul  {
+
+    .head {
+      position: absolute;
+      top: 2.5rem;
+      left: 3rem;
+    }
+    ul {
       display: flex;
       flex-direction: column;
+      width: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       li {
-      margin: 3rem;
-      list-style: none;
+        list-style: none;
       }
     }
     a {
       font-size: 1.8rem;
       text-transform: uppercase;
-      padding: 2rem 0;
       font-weight: bold;
       letter-spacing: 0.2rem;
       color: ${({ theme }) => theme.primaryDark};
       text-decoration: none;
       transition: color 0.3s linear;
-      margin: 3rem;
-/*
-      @media (max-width: ${({ theme }) => theme.mobile}) {
-        font-size: 1.5rem;
-        text-align: center;
-      } */
-
-    }
-
-    .logo {
-      position: absolute;
-      top: 0rem;
-      left: 0rem;
-    }
-
-    .burger-menu {
-      position: absolute;
-      top: 0;
-      right: 0;
     }
   }
 `

@@ -7,13 +7,15 @@ const StyledFooter = styled.footer`
   align-items: center;
   flex-wrap: wrap;
   padding: 1rem;
+  background: linear-gradient(45deg, #2a9d8f, #83eda5);
+  color: #333333;
+
   *:not(.gatsby-logo) {
     margin: 0.6rem;
   }
   h4 {
-    font-size: 1.4rem;
-    min-width: 30rem;
-    font-weight: normal;
+    font-size: 1.6rem;
+    font-weight: bold;
     .gatsby-logo {
       width: 1.6rem;
       height: 1.6rem;
@@ -34,14 +36,17 @@ const StyledFooter = styled.footer`
   }
   @media only screen and (max-width: ${({ theme }) => theme.laptop}) {
     justify-content: center;
-
+    max-width: 96%;
     h4 {
       margin: 1.3rem;
     }
   }
 
-  @media only screen and (min-width: ${({ theme }) => theme.laptop}) {
-    flex-direction: column;
+  /* MobileM 387px and less */
+  @media only screen and (max-width: ${({ theme }) => theme.mobileM}) {
+    .social-media {
+      display: none;
+    }
   }
 `
 

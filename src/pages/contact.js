@@ -1,5 +1,10 @@
+// const activeEnv =
+//   process.env.GATSBY_ACTIVE_ENV || process.env.NODE_ENV || "development"
+
+// console.log(`Using environment config: '${activeEnv}'`)
+
 // require("dotenv").config({
-//   path: `.env.${process.env.NODE_ENV}`,
+//   path: `.env.${activeEnv}`,
 // })
 
 import React, { useState } from "react"
@@ -47,7 +52,7 @@ const Contact = () => {
     onSubmit: (values, actions) => {
       axios({
         method: "POST",
-        url: "https://formspree.io/meqrwnbn",
+        url: process.env.FORMS_ENDPOINT,
         data: values,
       })
         .then(response => {
@@ -55,7 +60,7 @@ const Contact = () => {
           actions.setSubmitting(false)
           actions.resetForm()
           handleServerResponse(true, "Thank you for submiting !")
-          // navigate("/thank-you")
+          navigate("/thank-you")
         })
         .catch(error => {
           setLoading(false)

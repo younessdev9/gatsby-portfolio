@@ -4,7 +4,7 @@ export const StyledSocial = styled.ul`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 50rem;
+  max-width: 55rem;
   height: 4rem;
   margin: 0 auto;
   list-style: none;
@@ -21,9 +21,6 @@ export const StyledSocial = styled.ul`
     }
   }
   @media only screen and (max-width: ${({ theme }) => theme.mobileL}) {
-    width: 42rem;
-  }
-  @media only screen and (max-width: ${({ theme }) => theme.mobileL}) {
-    width: 72%;
+    width: 70%;
   }
 `

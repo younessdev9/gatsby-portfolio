@@ -24,7 +24,7 @@ export const StyledSection = styled.section`
       font-size: 2rem;
       line-height: 3rem;
       text-align: center;
-      margin-top: 5rem;
+      margin-top: 3rem;
       max-width: 57rem;
       color: ${({ theme }) => theme.lightgreyTextColor};
     }
@@ -33,7 +33,7 @@ export const StyledSection = styled.section`
       justify-content: space-between;
       width: 50rem;
       flex-wrap: wrap;
-      margin-top: 7rem;
+      margin-top: 4rem;
     }
   }
   .right-section {
@@ -110,8 +110,21 @@ export const StyledSection = styled.section`
     }
   }
 
+  /* tablet max 768px and less */
+  @media only screen and (max-width: ${({ theme }) => theme.tablet}) {
+    .left-section {
+      h4 {
+        text-align: left;
+      }
+      .btns {
+        margin-top: 2rem;
+      }
+    }
+  }
   @media only screen and (max-width: ${({ theme }) => theme.mobileX}) {
     padding: 0;
+    margin: 1rem auto;
+    width: 90%;
     .right-section {
       .myicon {
         max-width: 50%;
@@ -124,9 +137,13 @@ export const StyledSection = styled.section`
       padding: 0;
 
       .btns {
-        width: 70%;
+        width: 80%;
+      }
+      h4 {
+        text-align: center;
       }
       h3 {
+        text-align: center;
         font-size: 3rem;
         font-weight: 500;
         font-style: normal;
@@ -136,6 +153,8 @@ export const StyledSection = styled.section`
       }
     }
   }
+
+  /* MobileM 387px and less */
   @media only screen and (max-width: ${({ theme }) => theme.mobileM}) {
     .left-section {
       display: flex;
@@ -152,6 +171,7 @@ export const StyledSection = styled.section`
       }
       h4 {
         width: 90%;
+        text-align: center;
       }
     }
   }

@@ -40,9 +40,15 @@ const StyledContact = styled.div`
     font-size: 1.9rem;
   }
   span {
+    max-width: 100%;
     color: red;
     font-weight: 500;
     margin-top: 1rem;
+  }
+  .succes {
+    color: #4bb453;
+    text-align: center;
+    font-size: 2rem;
   }
   form {
     margin: 5rem 0;

@@ -1,11 +1,5 @@
 import React from "react"
-import {
-  FaFacebookSquare,
-  FaLinkedin,
-  FaGithub,
-  FaTwitter,
-  FaInstagram,
-} from "react-icons/fa"
+import { FaLinkedin, FaGithub, FaTwitter, FaInstagram } from "react-icons/fa"
 
 export const data = [
   {
@@ -16,7 +10,7 @@ export const data = [
   {
     id: 2,
     icon: <FaLinkedin className="social-icon" />,
-    url: "https://www.instagram.com/unessdev",
+    url: "www.linkedin.com/in/younessdev",
   },
   {
     id: 3,
@@ -27,10 +21,5 @@ export const data = [
     id: 4,
     icon: <FaInstagram className="social-icon" />,
     url: "https://www.instagram.com/unessdev",
-  },
-  {
-    id: 5,
-    icon: <FaFacebookSquare className="social-icon" />,
-    url: "https://web.facebook.com/youness.hassani.3363",
   },
 ]

@@ -1,21 +1,16 @@
 import React from "react"
 import { Link } from "gatsby"
 import DarkModeToggle from "react-dark-mode-toggle"
-import Burger from "../burger/burger"
 import { StyledMenu } from "./menu.styled"
-import Logo from "../assets/thefinal.svg"
 const Menu = ({ open, setOpen, toggle, checked }) => {
   return (
     <StyledMenu open={open} onClick={() => setOpen(!open)}>
       <div className="head">
-        <Link to="/" className="logo" onClick={() => setOpen(!open)}>
-          <Logo />
-        </Link>
-        <Burger
-          open={open}
-          setOpen={setOpen}
-          className="burger-menu"
-          id="close-btn"
+        <DarkModeToggle
+          onChange={toggle}
+          checked={checked()}
+          size={60}
+          speed={3}
         />
       </div>
       <ul>
@@ -33,14 +28,6 @@ const Menu = ({ open, setOpen, toggle, checked }) => {
         </li>
         <li>
           <Link to="/contact">Contact</Link>
-        </li>
-        <li>
-          <DarkModeToggle
-            onChange={toggle}
-            checked={checked()}
-            size={60}
-            speed={3}
-          />
         </li>
       </ul>
     </StyledMenu>

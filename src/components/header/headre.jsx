@@ -5,6 +5,8 @@ import DarkModeToggle from "react-dark-mode-toggle"
 import { StyledHeader } from "./header"
 import Logo from "../assets/thefinal.svg"
 import Burger from "../burger/burger"
+import Menu from "../menu/menu"
+
 const Header = ({ toggle, checked, open, setOpen }) => (
   <StyledHeader>
     <div className="header-wrapper">
@@ -12,6 +14,7 @@ const Header = ({ toggle, checked, open, setOpen }) => (
         <Logo className="logo" />
       </Link>
       <Burger open={open} setOpen={setOpen} className="burger-menu" />
+      <Menu open={open} setOpen={setOpen} toggle={toggle} checked={checked} />
       <ul>
         <li>
           <Link to="/" activeClassName="active">
