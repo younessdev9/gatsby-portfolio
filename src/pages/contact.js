@@ -52,7 +52,7 @@ const Contact = () => {
     onSubmit: (values, actions) => {
       axios({
         method: "POST",
-        url: process.env.FORMS_ENDPOINT,
+        url: process.env.GATSBY_FORMS_ENDPOINT,
         data: values,
       })
         .then(response => {
