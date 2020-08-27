@@ -6,10 +6,10 @@ export const StyledHeader = styled.nav`
   position: fixed;
   top: 0;
 
-  border-bottom: 1px #333333 solid;
+  border-bottom: 2px #3333 solid;
   background-color: ${({ theme }) => theme.buttonBg};
   z-index: 100;
-  padding-top: 1rem;
+  padding-top: 1rem ;
 
   .header-wrapper {
     display: flex;
@@ -67,6 +67,7 @@ export const StyledHeader = styled.nav`
   }
 
   @media only screen and (max-width: ${({ theme }) => theme.tablet}) {
+    border-bottom: none;
     ul {
       display: none;
     }
@@ -81,6 +82,15 @@ export const StyledHeader = styled.nav`
   }
 
   @media only screen and (max-width: ${({ theme }) => theme.mobileL}) {
+    .header-wrapper {
+    height: 3vh;
+    margin: 0 auto;
+    padding: .4rem;
+
+    .menu-icon {
+      display: none;
+    }
+  }
     .header-wrapper {
       width: 93%;
     }
