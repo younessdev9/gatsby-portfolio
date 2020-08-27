@@ -28,7 +28,7 @@ const StyledContact = styled.div`
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
-    font-size: 2.2rem;
+    font-size: 2rem;
     line-height: 3rem;
   }
   p a {
@@ -39,7 +39,11 @@ const StyledContact = styled.div`
     margin: 2rem 0 0.8rem 0;
     font-size: 1.9rem;
   }
-
+  span {
+    color: red;
+    font-weight: 500;
+    margin-top: 1rem;
+  }
   form {
     margin: 5rem 0;
     display: flex;
@@ -52,11 +56,11 @@ const StyledContact = styled.div`
     input,
     textarea {
       width: 100%;
-      font-family: Montserrat;
+      font-family: inherit;
       font-style: normal;
       font-weight: normal;
-      font-size: 2rem;
-      line-height: 2.2rem;
+      font-size: 1.7rem;
+      line-height: 2rem;
       border: 1px solid #212121;
       border-radius: 4px;
       padding: 1rem;
@@ -90,12 +94,19 @@ const StyledContact = styled.div`
   }
   @media only screen and (min-width: ${({ theme }) => theme.desktop}) {
     padding: 8rem;
+    height: auto;
+  }
+
+  @media only screen and (max-width: ${({ theme }) => theme.desktop}) {
+    padding: 8rem;
+    height: auto;
   }
 
   @media only screen and (max-width: ${({ theme }) => theme.mobileX}) {
     max-width: 98%;
     padding: 0.4rem;
     align-items: center;
+    height: auto;
     form {
       input,
       textarea {

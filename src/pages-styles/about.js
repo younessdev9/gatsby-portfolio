@@ -108,7 +108,8 @@ const StyledAbout = styled.div`
 
   @media only screen and (max-width: ${({ theme }) => theme.mobileL}) {
     .container {
-      width: 110%;
+      width: 100%;
+      padding: 0;
       .info-wrapper {
         min-width: auto;
       }

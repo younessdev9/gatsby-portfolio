@@ -93,6 +93,7 @@ const Contact = () => {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.fullName}
+            required
           />
           {formik.touched.fullName && formik.errors.fullName ? (
             <span className="error">{formik.errors.fullName}</span>
@@ -107,6 +108,7 @@ const Contact = () => {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.email}
+            required
           />
           {formik.touched.email && formik.errors.email ? (
             <span className="error">{formik.errors.email}</span>
@@ -121,6 +123,7 @@ const Contact = () => {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.message}
+            required
           />
           {formik.touched.message && formik.errors.message ? (
             <span className="error">{formik.errors.message}</span>
