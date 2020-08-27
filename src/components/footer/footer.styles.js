@@ -1,13 +1,14 @@
 import styled from "styled-components"
 
 const StyledFooter = styled.footer`
-  border-top: 2px solid #333333;
+  border-top: 2px solid #3333;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   padding: 1rem;
-  background: linear-gradient(45deg, #2a9d8f, #83eda5);
+  background: linear-gradient(45deg, #83eda5, #2a9d8f);
+  /* background-color: #43464b; */
   color: #333333;
 
   *:not(.gatsby-logo) {
@@ -15,7 +16,8 @@ const StyledFooter = styled.footer`
   }
   h4 {
     font-size: 1.6rem;
-    font-weight: bold;
+    font-weight: 500;
+    color: #f5f5f5;
     .gatsby-logo {
       width: 1.6rem;
       height: 1.6rem;

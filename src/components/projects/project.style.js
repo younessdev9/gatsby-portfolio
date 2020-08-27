@@ -32,9 +32,10 @@ const StyledProjects = styled.div`
     border-radius: 8px;
 
     &:hover {
-      box-shadow: 4px 4px 10px -3px ${props => props.theme.blur},
+      box-shadow: box-shadow: 0 0 2px grey;
+      /* box-shadow: 4px 4px 10px -3px ${props => props.theme.blur},
         4px 4px 10px ${props => props.theme.blur},
-        -4px 4px 10px -3px ${props => props.theme.blur};
+        -4px 4px 10px -3px ${props => props.theme.blur}; */
       transform: scale(1.03);
     }
     ul {
@@ -102,6 +103,7 @@ const StyledProjects = styled.div`
     margin: 2 auto;
     padding: 0;
     width: 90%;
+    height: grid-auto-columns;
     h2 {
       font-size: 2rem;
       line-height: 3rem;
@@ -121,13 +123,32 @@ const StyledProjects = styled.div`
       width: 100%;
       margin-top: 1rem;
     }
+
+    .project-links {
+    margin: .5rem;
+    a {
+      .icon {
+        width: 2rem;
+        height: 2rem;
+        fill: ${({ theme }) => theme.socialColor};
+        transition: all 0.3s ease-out;
+        &:hover {
+          transform: scale(1.4);
+          fill: ${({ theme }) => theme.primaryColor};
+        }
+      }
+    }
+    height: 3rem;
+  }
   }
   /* MobileM 387px and less */
   @media only screen and (max-width: ${({ theme }) => theme.mobileM}) {
+    padding: 0;
+    width: 100%;
     .cards-container {
       .project-card {
         width: 88%;
-        height: auto;
+        height: 70%;
         .stuck {
           li {
             font-size: 1.3rem;
