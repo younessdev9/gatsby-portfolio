@@ -3,9 +3,7 @@ import { ThemeProvider } from "styled-components"
 import Header from "./header/headre"
 import Footer from "../components/footer/footer.component"
 import { Globalstyles, lightTheme, darkTheme } from "../globalstyles"
-
-import Menu from "./menu/menu"
-
+import Main from "./main"
 const Layout = ({ children }) => {
   const [theme, setTheme] = useState()
   const [open, setOpen] = useState(false)
@@ -39,19 +37,15 @@ const Layout = ({ children }) => {
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <Globalstyles />
-      <Header
-        toggle={toggleTheme}
-        checked={handleChecking}
-        open={open}
-        setOpen={setOpen}
-      />
-      <Menu
-        open={open}
-        setOpen={setOpen}
-        toggle={toggleTheme}
-        checked={handleChecking}
-      />
-      {children}
+      <Main>
+        <Header
+          toggle={toggleTheme}
+          checked={handleChecking}
+          open={open}
+          setOpen={setOpen}
+        />
+        {children}
+      </Main>
       <Footer />
     </ThemeProvider>
   )

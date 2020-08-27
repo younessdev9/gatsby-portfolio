@@ -88,10 +88,22 @@ export const StyledSkills = styled.div`
     }
   }
   @media (max-width: ${({ theme }) => theme.mobileX}) {
+    width: 90%;
+    margin: 2rem auto;
+    padding: 0;
     h2 {
       font-weight: normal;
       font-size: 2rem;
       line-height: 3rem;
+    }
+  }
+
+  /* MobileM 387px and less */
+  @media only screen and (max-width: ${({ theme }) => theme.mobileM}) {
+    margin-top: 3rem;
+
+    .cards {
+      margin-top: 2rem;
     }
   }
 `
