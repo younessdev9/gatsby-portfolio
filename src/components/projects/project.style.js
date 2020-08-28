@@ -41,6 +41,7 @@ const StyledProjects = styled.div`
     ul {
       display: flex;
       justify-content: space-evenly;
+      flex-wrap: wrap;
       list-style: none;
       margin-top: 0.8rem;
       li {
@@ -48,6 +49,7 @@ const StyledProjects = styled.div`
         border-radius: 2px;
         padding: 0.3rem;
         transition: all 0.3s ease-out;
+        margin: .4rem;
         &:hover {
           color: #f5f5f5;
           background-color: ${({ theme }) => theme.primaryColor};

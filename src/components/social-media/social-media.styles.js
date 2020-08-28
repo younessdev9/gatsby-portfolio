@@ -23,4 +23,7 @@ export const StyledSocial = styled.ul`
   @media only screen and (max-width: ${({ theme }) => theme.mobileL}) {
     width: 70%;
   }
+  @media only screen and (max-width: ${({ theme }) => theme.tabletL}) {
+    width: 60%;
+  }
 `

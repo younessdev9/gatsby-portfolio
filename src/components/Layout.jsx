@@ -37,15 +37,13 @@ const Layout = ({ children }) => {
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <Globalstyles />
-      <Main>
-        <Header
-          toggle={toggleTheme}
-          checked={handleChecking}
-          open={open}
-          setOpen={setOpen}
-        />
-        {children}
-      </Main>
+      <Header
+        toggle={toggleTheme}
+        checked={handleChecking}
+        open={open}
+        setOpen={setOpen}
+      />
+      <Main>{children}</Main>
       <Footer />
     </ThemeProvider>
   )

@@ -9,17 +9,25 @@ const StyledError = styled.div`
 
   h4 {
     width: 80%;
-    height: 24rem;
-    font-family: Montserrat;
-    font-style: normal;
+    max-height: 24rem;
     font-weight: normal;
-    font-size: 3.6rem;
+    font-size: 3rem;
     line-height: 4.4rem;
     text-align: center;
   }
   .error-illistration {
+    margin: 0.6rem;
     max-width: 60rem;
     max-height: 40rem;
+  }
+
+  @media only screen and (max-width: ${({ theme }) => theme.tabletL}) {
+    h4 {
+      font-size: 2rem;
+    }
+    .error-illistration {
+      max-height: 22rem;
+    }
   }
 `
 
