@@ -13,7 +13,7 @@ const ThanksPage = () => {
           to thank you for writing to me. If your message is urgent, please use
           the telephone number you can find it <Link to="/about">here</Link> to
           talk to me . Otherwise, I will reply by email as soon as possible.
-          Talk to you soon, [Your Company]
+          Talk to you soon.
         </h3>
       </StyledThank>
     </Layout>

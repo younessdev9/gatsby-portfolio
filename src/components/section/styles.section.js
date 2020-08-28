@@ -23,7 +23,6 @@ export const StyledSection = styled.section`
       font-weight: normal;
       font-size: 2rem;
       line-height: 3rem;
-      text-align: center;
       margin-top: 3rem;
       max-width: 57rem;
       color: ${({ theme }) => theme.lightgreyTextColor};
@@ -33,7 +32,7 @@ export const StyledSection = styled.section`
       justify-content: space-between;
       width: 50rem;
       flex-wrap: wrap;
-      margin-top: 4rem;
+      margin-top: 3rem;
     }
   }
   .right-section {
@@ -50,7 +49,7 @@ export const StyledSection = styled.section`
   @media only screen and (max-width: ${({ theme }) => theme.laptop}) {
     padding: 2rem;
     .left-section {
-      padding: 3rem 2rem;
+      margin: 3rem 2rem;
       h3 {
         font-size: 3rem;
         line-height: 4rem;
@@ -61,7 +60,7 @@ export const StyledSection = styled.section`
 
       .btns {
         width: 40rem;
-        margin-top: 5rem;
+        margin-top: 2.6rem;
       }
     }
 
@@ -78,9 +77,24 @@ export const StyledSection = styled.section`
 
   @media only screen and (max-width: ${({ theme }) => theme.tabletL}) {
     .right-section {
-      .myicon {
-        max-width: 44rem;
-        height: 39rem;
+      display: none;
+    }
+    .left-section {
+      h3 {
+        .hi {
+          font-size: 1.8rem;
+          font-weight: 400;
+        }
+      }
+      h4 {
+        text-align: left;
+        margin-top: 2rem;
+      }
+      .btns {
+        a {
+          width: 17rem;
+          margin-left: 0;
+        }
       }
     }
   }
@@ -97,6 +111,7 @@ export const StyledSection = styled.section`
 
       .btns {
         width: 75%;
+        margin-top: 2.6rem;
       }
     }
 
@@ -135,12 +150,14 @@ export const StyledSection = styled.section`
       display: flex;
       flex-direction: column;
       padding: 0;
+      margin: 0 auto 1rem auto;
 
       .btns {
-        width: 80%;
+        width: 74%;
       }
       h4 {
         text-align: center;
+        margin-top: 1rem;
       }
       h3 {
         text-align: center;

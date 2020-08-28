@@ -78,12 +78,16 @@ export const Globalstyles = createGlobalStyle`
     }
   }
   body {
+    a {
+      text-decoration: none;
+      color : inherit;
+    }
     font-size: 1.7rem;
     font-family: 'Montserrat', sans-serif;
     background-color: ${props =>
       props.theme.mode === "dark" ? props.theme.darkColor : "#FFFFFF"};
-    color: ${props => (props.theme.mode === "dark" ? "#F5F5F5" : "#202124")};
-    padding: 7rem 1rem 1rem 1rem; */
+    color: ${props => (props.theme.mode === "dark" ? "#F5F5F5" : "#2f3030")};
+    padding: 7rem 1rem 0 1rem;
     overflow-x: hidden;
     @media only screen and (min-width: ${({ theme }) => theme.desktop}) {
     padding: 7rem 0 1rem 4rem;
@@ -93,3 +97,5 @@ export const Globalstyles = createGlobalStyle`
     }
   }
 `
+
+// #202124

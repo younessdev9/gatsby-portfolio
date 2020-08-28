@@ -1,6 +1,10 @@
 import styled from "styled-components"
-
-export const StyledBtn = styled.button`
+import { Link } from "gatsby"
+export const StyledBtn = styled(Link)`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
   background-color: ${({ theme }) => theme.buttonBg};
   border-radius: ${props => props.brValue};
   cursor: pointer;
@@ -8,9 +12,6 @@ export const StyledBtn = styled.button`
   height: 5rem;
   color: ${({ theme }) => theme.buttonColor};
   border: 2px solid #2a9d8f;
-
-  font-family: inherit;
-  font-style: normal;
   font-weight: normal;
   font-size: 2rem;
   line-height: 3rem;
@@ -38,5 +39,9 @@ export const StyledBtn = styled.button`
     width: 11rem;
     height: 4rem;
     font-size: 1.6rem;
+  }
+  /* 796px */
+  @media only screen and (max-width: ${({ theme }) => theme.tabletL}) {
+    font-size: 1.7rem;
   }
 `

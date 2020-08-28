@@ -6,11 +6,10 @@ export const StyledHeader = styled.nav`
   position: fixed;
   top: 0;
 
-  border-bottom: 2px #3333 solid;
+  border-bottom: 2px #33333380 solid;
   background-color: ${({ theme }) => theme.buttonBg};
   z-index: 100;
   padding-top: 1rem ;
-
   .header-wrapper {
     display: flex;
     align-items: center;
@@ -67,7 +66,6 @@ export const StyledHeader = styled.nav`
   }
 
   @media only screen and (max-width: ${({ theme }) => theme.tablet}) {
-    border-bottom: none;
     ul {
       display: none;
     }

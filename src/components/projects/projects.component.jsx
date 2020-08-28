@@ -28,7 +28,7 @@ const PrevProjects = () => {
   const projectCards = data.projects.nodes.map(
     ({ title, demoLink, githubLink, img: { fluid }, stuck }, i) => (
       <div key={i + 4} className="project-card">
-        <Img fluid={fluid} alt="project one image" />
+        <Img fluid={fluid} alt="project  image" />
         <h4 className="project-card-title">{title}</h4>
         <ul className="stuck">
           {stuck.map((item, i) => (

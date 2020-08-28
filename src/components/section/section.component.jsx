@@ -1,10 +1,18 @@
 import React from "react"
-import { Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import { StyledSection } from "./styles.section"
 import Icon from "../assets/myimage.svg"
 import Button from "../button/button.component"
 
 const Section = () => {
+  const data = useStaticQuery(graphql`
+    {
+      file(extension: { eq: "pdf" }) {
+        publicURL
+      }
+    }
+  `)
+  console.log("################", data)
   return (
     <StyledSection>
       <div className="left-section">
@@ -14,18 +22,23 @@ const Section = () => {
           assani
         </h3>
         <h4>
-          A self-taugh front-end developer and javaScript enthusiastic and fast
+          A self-taught front-end developer and javaScript enthusiastic and fast
           learner
         </h4>
         <div className="btns">
-          <Button className="main-btn" bgColor={"#FFFFFF"} brValue={"70px"}>
-            Resume
-          </Button>
-          <Link to="/contact">
+          <a role="button" href={data.file.publicURL} download>
             <Button className="main-btn" bgColor={"#FFFFFF"} brValue={"70px"}>
-              Contact me
+              Resume
             </Button>
-          </Link>
+          </a>
+          <Button
+            to="/contact"
+            className="main-btn"
+            bgColor={"#FFFFFF"}
+            brValue={"70px"}
+          >
+            Contact me
+          </Button>
         </div>
       </div>
       <div className="right-section">
