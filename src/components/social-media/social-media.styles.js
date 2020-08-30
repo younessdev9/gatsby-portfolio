@@ -8,7 +8,8 @@ export const StyledSocial = styled.ul`
   height: 4rem;
   margin: 0 auto;
   list-style: none;
-
+  width: 90%;
+  margin-top: 2rem;
   .social-icon {
     fill: ${props => props.theme.socialColor};
     width: 2.7rem;

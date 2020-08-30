@@ -5,7 +5,6 @@ export const StyledHeader = styled.nav`
   font-size: 1.8rem;
   position: fixed;
   top: 0;
-
   border-bottom: 2px #33333380 solid;
   background-color: ${({ theme }) => theme.buttonBg};
   z-index: 100;
@@ -18,17 +17,15 @@ export const StyledHeader = styled.nav`
     height: 5vh;
     margin: 0 auto;
     padding: 1rem;
+    padding-bottom: 2rem;
 
     .menu-icon {
       display: none;
     }
   }
   .logo {
-    width: 10rem;
-    height: 8.7rem;
-  }
-  .burger-menu {
-
+    width: 8rem;
+    height: 7rem;
   }
   .active {
     border-bottom: ${props => props.theme.borderBottom};
@@ -103,8 +100,12 @@ export const StyledHeader = styled.nav`
       width: 93%;
     }
   }
-  left
-  :0;
+  @media only screen and (max-width: ${({ theme }) => theme.mobileX}) {
+    .header-wrapper {
+      width: 93%;
+      height: 6vh;
+    }
+  }
 `
 // //    .header-wrapper {
 //   width: 40rem;

@@ -3,10 +3,20 @@ require("dotenv").config({
 })
 
 module.exports = {
+  siteMetadata: {
+    title: "Youness",
+    description: "this youness Personal Portfolio",
+    author: "@youness",
+    twitterUsername: "@younessdev",
+    image: "/portfolio.png",
+    siteUrl: "https://unessdev.com",
+  },
   plugins: [
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

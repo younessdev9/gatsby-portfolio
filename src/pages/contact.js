@@ -1,17 +1,9 @@
-// const activeEnv =
-//   process.env.GATSBY_ACTIVE_ENV || process.env.NODE_ENV || "development"
-
-// console.log(`Using environment config: '${activeEnv}'`)
-
-// require("dotenv").config({
-//   path: `.env.${activeEnv}`,
-// })
-
 import React, { useState } from "react"
 import { useFormik } from "formik"
 import axios from "axios"
 import { navigate } from "gatsby"
 import Layout from "../components/Layout"
+import SEO from "../components/SEO"
 import StyledContact from "../pages-styles/contact"
 import Spiner from "../components/assets/spinner.svg"
 const Contact = () => {
@@ -76,6 +68,10 @@ const Contact = () => {
   }
   return (
     <Layout>
+      <SEO
+        title="Contact Me"
+        descrition="this wher you can contact me to hire me as react develeper or for freelance jobs"
+      />
       <StyledContact>
         {loading && (
           <div className="loading">
@@ -83,7 +79,7 @@ const Contact = () => {
           </div>
         )}
         <p>
-          You can send me email to: &nbsp;
+          You can send me email via this : &nbsp;
           <a href="mailto:younessdev@yahoo.com">
             younessdev@yahoo.com
           </a> <br /> or fill the form below:

@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import { StyledSection } from "./styles.section"
 import Icon from "../assets/myimage.svg"
 import Button from "../button/button.component"
+import Social from "../social-media/social-media.component"
 
 const Section = () => {
   const data = useStaticQuery(graphql`
@@ -12,7 +13,6 @@ const Section = () => {
       }
     }
   `)
-  console.log("################", data)
   return (
     <StyledSection>
       <div className="left-section">
@@ -27,18 +27,25 @@ const Section = () => {
         </h4>
         <div className="btns">
           <a role="button" href={data.file.publicURL} download>
-            <Button className="main-btn" bgColor={"#FFFFFF"} brValue={"70px"}>
+            <Button
+              className="main-btn"
+              bgColor={"#298880"}
+              brValue={"70px"}
+              btColor={"#ffffff"}
+            >
               Resume
             </Button>
           </a>
           <Button
             to="/contact"
             className="main-btn"
-            bgColor={"#FFFFFF"}
+            bgColor={"#ffffff"}
             brValue={"70px"}
+            btColor={"#000000"}
           >
             Contact me
           </Button>
+          <Social width={"4.6rem"} height={"4.6rem"} />
         </div>
       </div>
       <div className="right-section">

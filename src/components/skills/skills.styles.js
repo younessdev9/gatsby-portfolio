@@ -29,17 +29,18 @@ export const StyledSkills = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 30rem;
+    width: 28rem;
     height: 35rem;
     border: 1px solid ${({ theme }) => theme.primaryColor};
     border-radius: 8px;
     transition: all 0.3s ease-out;
     margin: 1.4rem;
-    padding: 0.4rem;
+    padding: 1rem;
+    h3 {
+      font-size: 2rem;
+    }
     &:hover {
-      box-shadow: 4px 4px 10px -3px ${props => props.theme.blur},
-        4px 4px 10px ${props => props.theme.blur},
-        -4px 4px 10px -3px ${props => props.theme.blur};
+      box-shadow: 0 0 6px #33333380;
       transform: scale(1.03);
     }
   }

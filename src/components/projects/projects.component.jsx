@@ -1,8 +1,7 @@
 import React from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import { FaGithub, FaExternalLinkSquareAlt } from "react-icons/fa"
-import Button from "../button/button.component"
 
 import StyledProjects from "./project.style"
 const PrevProjects = () => {
@@ -50,9 +49,6 @@ const PrevProjects = () => {
     <StyledProjects>
       <h2>Projects</h2>
       <div className="cards-container">{projectCards}</div>
-      <Link to="/projects">
-        <Button brValue={"4px"}>See More</Button>
-      </Link>
     </StyledProjects>
   )
 }
