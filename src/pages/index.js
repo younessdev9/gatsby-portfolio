@@ -7,7 +7,7 @@ import PrevProjects from "../components/projects/projects.component"
 
 const Home = () => (
   <Layout>
-    <SEO title="Home | Youness" descrition="this is the home page" />
+    <SEO title="Home" descrition="this is the home page" />
     <Section />
     <Skills />
     <PrevProjects />
