@@ -5,12 +5,12 @@ export const StyledBtn = styled(Link)`
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  background-color: ${({ theme }) => theme.buttonBg};
+  background-color: ${props => props.bgColor};
   border-radius: ${props => props.brValue};
   cursor: pointer;
-  width: 20rem;
+  width: 18rem;
   height: 5rem;
-  color: ${({ theme }) => theme.buttonColor};
+  color: ${props => props.btColor};
   border: 2px solid #2a9d8f;
   font-weight: normal;
   font-size: 2rem;
@@ -29,19 +29,24 @@ export const StyledBtn = styled(Link)`
     color: ${({ theme }) => theme.btnHoverColor};
   }
 
+  @media only screen and (max-width: ${({ theme }) => theme.tabletL}) {
+    width: 17rem;
+    margin-left: 0;
+  }
+  /* 1024px */
   @media only screen and (max-width: ${({ theme }) => theme.laptop}) {
     width: 15rem;
     height: 4.4rem;
     margin: 1rem;
   }
-
+  /* 796px */
   @media only screen and (max-width: ${({ theme }) => theme.mobileL}) {
     width: 11rem;
     height: 4rem;
-    font-size: 1.6rem;
-  }
-  /* 796px */
-  @media only screen and (max-width: ${({ theme }) => theme.tabletL}) {
     font-size: 1.7rem;
+  }
+  /* 500px */
+  @media only screen and (max-width: ${({ theme }) => theme.mobileX}) {
+    width: 13rem;
   }
 `

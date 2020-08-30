@@ -2,6 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/Layout"
+import SEO from "../components/SEO"
 import StyledAbout from "../pages-styles/about"
 import Tools from "../components/languges-tools/tools"
 import { MdLocationOn, MdEmail, MdPhone } from "react-icons/md"
@@ -20,6 +21,7 @@ const About = () => {
   `)
   return (
     <Layout>
+      <SEO title="About" descrition="about Youness React developer" />
       <StyledAbout>
         <h2>About me</h2>
         <div className="container">
@@ -29,11 +31,11 @@ const About = () => {
           />
           <div className="info-wrapper">
             <p>
-              I'm a Self-taught front end developer with a strong sense for
-              aesthetics and interaction. i'm 21 years old and i'm in love with
-              new technologies and ambitious to make my place in the open source
-              world .I am not just satisfied by just what is does and does it
-              works i always ask my self how it does it
+              I'm a Self-taught React developer with a strong sense of
+              aesthetics and interaction. I'm 21 years old, and I'm in love with
+              the new technologies like Reactjs and Gatsbyjs, and ambitious to
+              make my place in the open-source world. I'm a person who improves
+              his skills each and every day to stay up to date
             </p>
             <div className="info">
               <div className="sub-info">

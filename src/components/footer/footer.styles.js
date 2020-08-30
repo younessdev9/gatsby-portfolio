@@ -7,8 +7,8 @@ const StyledFooter = styled.footer`
   align-items: center;
   flex-wrap: wrap;
   padding: 1rem;
-  background: linear-gradient(45deg, #83eda5, #2a9d8f);
-  /* background-color: #43464b; */
+  /* background: linear-gradient(45deg, #83eda5, #2a9d8f); */
+  background-color: #298880;
   color: #333333;
 
   *:not(.gatsby-logo) {

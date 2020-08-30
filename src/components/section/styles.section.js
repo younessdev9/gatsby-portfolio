@@ -30,7 +30,7 @@ export const StyledSection = styled.section`
     .btns {
       display: flex;
       justify-content: space-between;
-      width: 50rem;
+      width: 40rem;
       flex-wrap: wrap;
       margin-top: 3rem;
     }
@@ -89,12 +89,6 @@ export const StyledSection = styled.section`
       h4 {
         text-align: left;
         margin-top: 2rem;
-      }
-      .btns {
-        a {
-          width: 17rem;
-          margin-left: 0;
-        }
       }
     }
   }

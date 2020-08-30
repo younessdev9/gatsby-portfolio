@@ -27,11 +27,6 @@ const Header = ({ toggle, checked, open, setOpen }) => (
           </Link>
         </li>
         <li>
-          <Link to="/projects" activeClassName="active">
-            Projects
-          </Link>
-        </li>
-        <li>
           <Link to="/blog" activeClassName="active">
             Blog
           </Link>
