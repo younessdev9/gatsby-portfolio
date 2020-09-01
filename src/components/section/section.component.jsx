@@ -27,22 +27,11 @@ const Section = () => {
         </h4>
         <div className="btns">
           <a role="button" href={data.file.publicURL} download>
-            <Button
-              className="main-btn"
-              bgColor={"#298880"}
-              brValue={"70px"}
-              btColor={"#ffffff"}
-            >
+            <Button bgcolor={"#298880"} brvalue={"70px"} btcolor={"#ffffff"}>
               Resume
             </Button>
           </a>
-          <Button
-            to="/contact"
-            className="main-btn"
-            bgColor={"#ffffff"}
-            brValue={"70px"}
-            btColor={"#000000"}
-          >
+          <Button to="/contact" className="contact-btn" brvalue={"70px"}>
             Contact me
           </Button>
           <Social width={"4.6rem"} height={"4.6rem"} />

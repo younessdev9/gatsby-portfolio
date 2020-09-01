@@ -5,17 +5,16 @@ export const StyledBtn = styled(Link)`
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  background-color: ${props => props.bgColor};
-  border-radius: ${props => props.brValue};
+  background-color: ${props => props.bgcolor};
+  color: ${props => props.btcolor};
+  border-radius: ${props => props.brvalue};
   cursor: pointer;
   width: 18rem;
   height: 5rem;
-  color: ${props => props.btColor};
   border: 2px solid #2a9d8f;
   font-weight: normal;
   font-size: 2rem;
   line-height: 3rem;
-
   transition: all 0.3s ease-out;
 
   :focus {
