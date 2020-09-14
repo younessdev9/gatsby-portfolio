@@ -106,6 +106,7 @@ export const StyledSection = styled.section`
       .btns {
         width: 75%;
         margin-top: 2.6rem;
+        justify-content: center;
       }
     }
 

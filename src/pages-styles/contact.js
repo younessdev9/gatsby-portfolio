@@ -57,7 +57,7 @@ const StyledContact = styled.div`
     input {
       font-family: inherit;
       height: 4rem;
-      padding: 1rem;
+      padding: 0.5rem 1rem;
     }
     input,
     textarea {
