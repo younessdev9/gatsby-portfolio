@@ -5,7 +5,7 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: "Youness",
-    description: "this youness Personal Portfolio",
+    description: "Youness Hassani a Self-taught front-end developer",
     author: "@youness",
     twitterUsername: "@younessdev",
     image: "/portfolio.png",
@@ -64,7 +64,6 @@ module.exports = {
       resolve: `gatsby-source-contentful`,
       options: {
         spaceId: `5ea3danlwvxo`,
-        // Learn about environment variables: https://gatsby.dev/env-vars
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
