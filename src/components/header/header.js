@@ -8,7 +8,7 @@ export const StyledHeader = styled.nav`
   border-bottom: 2px #33333380 solid;
   background-color: ${({ theme }) => theme.buttonBg};
   z-index: 100;
-  padding-top: 1rem ;
+  padding-top: 1rem;
   .header-wrapper {
     display: flex;
     align-items: center;
@@ -49,9 +49,6 @@ export const StyledHeader = styled.nav`
       padding: 0.9rem;
     }
   }
-  /* @media only screen and (min-width: ${({ theme }) => theme.desktop}) {
-    width: 200rem;
-  } */
 
   @media only screen and (max-width: 900px) {
     .header-wrapper {
@@ -78,21 +75,21 @@ export const StyledHeader = styled.nav`
 
   @media only screen and (max-width: ${({ theme }) => theme.mobileL}) {
     .header-wrapper {
-    height: 3vh;
-    margin: 0 auto;
-    padding: .4rem;
+      height: 3vh;
+      margin: 0 auto;
+      padding: 0.4rem;
 
-    .menu-icon {
-      display: none;
+      .menu-icon {
+        display: none;
+      }
     }
-  }
     .header-wrapper {
       width: 93%;
     }
     .logo {
-    width: 7rem;
-    height: 7rem;
-  }
+      width: 7rem;
+      height: 7rem;
+    }
   }
 
   @media only screen and (min-width: ${({ theme }) => theme.mobileL}) {
@@ -107,6 +104,3 @@ export const StyledHeader = styled.nav`
     }
   }
 `
-// //    .header-wrapper {
-//   width: 40rem;
-// }

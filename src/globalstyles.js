@@ -84,9 +84,9 @@ export const Globalstyles = createGlobalStyle`
     }
     font-size: 1.7rem;
     font-family: 'Montserrat', sans-serif;
-    background-color: ${props =>
-      props.theme.mode === "dark" ? props.theme.darkColor : "#FFFFFF"};
-    color: ${props => (props.theme.mode === "dark" ? "#F5F5F5" : "#2f3030")};
+    background-color: ${({ theme }) =>
+      theme.mode === "dark" ? theme.darkColor : "#FFFFFF"};
+    color: ${({ theme }) => (theme.mode === "dark" ? "#F5F5F5" : "#2f3030")};
     padding: 7rem 1rem 0 1rem;
     overflow-x: hidden;
     @media only screen and (min-width: ${({ theme }) => theme.desktop}) {

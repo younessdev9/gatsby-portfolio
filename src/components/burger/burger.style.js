@@ -3,9 +3,6 @@ import styled from "styled-components"
 export const StyledBurger = styled.button`
   display: none;
   @media only screen and (max-width: ${({ theme }) => theme.tablet}) {
-    /* position: absolute;
-    top: 5%;
-    right: 4rem; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -45,5 +42,3 @@ export const StyledBurger = styled.button`
     }
   }
 `
-// ${({ theme, open }) =>
-//         open ? theme.primaryDark : theme.primaryLight};

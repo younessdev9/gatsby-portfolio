@@ -5,7 +5,6 @@ const StyledProjects = styled.div`
   flex-direction: column;
   align-items: center;
   h2 {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 3.4rem;
@@ -21,7 +20,6 @@ const StyledProjects = styled.div`
     height: 50rem;
 
     h4 {
-      font-family: Montserrat;
       font-style: normal;
       font-weight: normal;
       font-size: 3rem;

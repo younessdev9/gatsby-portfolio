@@ -1,5 +1,4 @@
 import React from "react"
-// import { withTheme } from "styled-components"
 import { StyledSocial } from "./social-media.styles"
 import { data } from "../constant/social-links"
 

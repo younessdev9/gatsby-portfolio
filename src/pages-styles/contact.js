@@ -147,4 +147,3 @@ const StyledContact = styled.div`
   }
 `
 export default StyledContact
-//submitBtnBgColor

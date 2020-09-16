@@ -33,9 +33,6 @@ const StyledProjects = styled.div`
 
     &:hover {
       box-shadow: box-shadow: 0 0 2px grey;
-      /* box-shadow: 4px 4px 10px -3px ${props => props.theme.blur},
-        4px 4px 10px ${props => props.theme.blur},
-        -4px 4px 10px -3px ${props => props.theme.blur}; */
       transform: scale(1.03);
     }
     ul {
