@@ -2,7 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import { FaGithub, FaExternalLinkSquareAlt } from "react-icons/fa"
-
+import Fade from "react-reveal/Fade"
 import StyledProjects from "./project.style"
 const PrevProjects = () => {
   const data = useStaticQuery(graphql`
@@ -48,7 +48,9 @@ const PrevProjects = () => {
   return (
     <StyledProjects>
       <h2>Projects</h2>
-      <div className="cards-container">{projectCards}</div>
+      <Fade bottom cascade>
+        <div className="cards-container">{projectCards}</div>
+      </Fade>
     </StyledProjects>
   )
 }
