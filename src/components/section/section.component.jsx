@@ -1,18 +1,10 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
 import { StyledSection } from "./styles.section"
 import Icon from "../assets/myimage.svg"
 import Button from "../button/button.component"
 import Social from "../social-media/social-media.component"
 
 const Section = () => {
-  const data = useStaticQuery(graphql`
-    {
-      file(extension: { eq: "pdf" }) {
-        publicURL
-      }
-    }
-  `)
   return (
     <StyledSection>
       <div className="left-section">
@@ -26,7 +18,12 @@ const Section = () => {
           learner
         </h4>
         <div className="btns">
-          <a role="button" href={data.file.publicURL} download>
+          <a
+            role="button"
+            href="https://drive.google.com/file/d/1vzhyc0fS5virYS_2la3OLuYDp_gY11u8/view?usp=sharing"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Button bgcolor={"#298880"} brvalue={"70px"} btcolor={"#ffffff"}>
               Resume
             </Button>

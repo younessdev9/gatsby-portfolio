@@ -5,7 +5,6 @@ const StyledProjects = styled.div`
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-
   padding: 3rem;
   margin: 3rem auto 10rem auto;
 
@@ -146,7 +145,7 @@ const StyledProjects = styled.div`
     width: 100%;
     .cards-container {
       .project-card {
-        width: 88%;
+        width: 72%;
         height: 70%;
         .stuck {
           li {

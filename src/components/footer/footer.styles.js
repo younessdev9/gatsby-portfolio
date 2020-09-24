@@ -9,10 +9,6 @@ const StyledFooter = styled.footer`
   padding: 1rem;
   background-color: #298880;
   color: #333333;
-
-  *:not(.gatsby-logo) {
-    margin: 0.6rem;
-  }
   h4 {
     font-size: 1.6rem;
     font-weight: 500;
