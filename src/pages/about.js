@@ -21,7 +21,7 @@ const About = () => {
   `)
   return (
     <Layout>
-      <SEO title="About" descrition="about Youness React developer" />
+      <SEO title="About" description="about Youness React developer" />
       <StyledAbout>
         <h2>About me</h2>
         <div className="container">

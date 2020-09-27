@@ -4,11 +4,11 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: "Youness",
+    title: "Youness Hassani",
     description: "Youness Hassani a Self-taught front-end developer",
     author: "@youness",
     twitterUsername: "@younessdev",
-    image: "/portfolio.png",
+    image: "/Portfolio.png",
     siteUrl: "https://unessdev.com",
   },
   plugins: [

@@ -6,7 +6,7 @@ const Blog = () => (
   <Layout>
     <SEO
       title="Blog"
-      descrition="this is youness blog where you can find all my blog about development and personal articles"
+      description="this is youness blog where you can find all my blog about development and personal articles"
     />
     <StyledBlog>
       <h3>comming soon!</h3>

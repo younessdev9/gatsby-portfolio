@@ -70,7 +70,7 @@ const Contact = () => {
     <Layout>
       <SEO
         title="Contact Me"
-        descrition="this wher you can contact me to hire me as react develeper or for freelance jobs"
+        description="this wher you can contact me to hire me as react develeper or for freelance jobs"
       />
       <StyledContact>
         {loading && (
