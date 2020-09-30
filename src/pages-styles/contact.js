@@ -69,7 +69,6 @@ const StyledContact = styled.div`
       line-height: 2rem;
       border: 1px solid #212121;
       border-radius: 4px;
-      padding: 1rem;
 
       &:focus {
         outline: none;
@@ -92,6 +91,7 @@ const StyledContact = styled.div`
     textarea {
       resize: vertical;
       min-height: 10rem;
+      padding: 0.5rem 1rem;
     }
 
     input:focus::placeholder label {

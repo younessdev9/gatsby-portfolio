@@ -6,7 +6,7 @@ export const StyledSocial = styled.ul`
   align-items: center;
   max-width: 55rem;
   height: 4rem;
-  margin: 0 auto;
+  margin: 0 1rem;
   list-style: none;
   width: 90%;
   margin-top: 2rem;
