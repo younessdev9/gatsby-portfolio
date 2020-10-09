@@ -83,7 +83,7 @@ export const Globalstyles = createGlobalStyle`
       color : inherit;
     }
     font-size: 1.7rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: ${({ theme }) =>
       theme.mode === "dark" ? theme.darkColor : "#FFFFFF"};
     color: ${({ theme }) => (theme.mode === "dark" ? "#F5F5F5" : "#2f3030")};

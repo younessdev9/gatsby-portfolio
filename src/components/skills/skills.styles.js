@@ -53,9 +53,6 @@ export const StyledSkills = styled.div`
     height: 5.5rem;
     left: 40rem;
     top: 65rem;
-
-    font-family: Montserrat;
-    font-style: normal;
     font-weight: normal;
     font-size: 2.6rem;
     line-height: 3.2rem;

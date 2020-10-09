@@ -4,7 +4,7 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: "Youness Hassani",
+    title: "Youness",
     description: "Youness Hassani a Self-taught front-end developer",
     author: "@youness",
     twitterUsername: "@younessdev",
@@ -36,7 +36,7 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: `Montserrat`,
+            family: `Roboto`,
             variants: [`400`, `500`, `700`],
           },
           {

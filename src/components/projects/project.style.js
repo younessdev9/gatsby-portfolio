@@ -58,7 +58,6 @@ const StyledProjects = styled.div`
     }
   }
   .project-card-title {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 2.4rem;

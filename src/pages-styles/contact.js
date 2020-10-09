@@ -25,7 +25,6 @@ const StyledContact = styled.div`
   }
   p,
   label {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 2rem;
@@ -130,7 +129,7 @@ const StyledContact = styled.div`
 
     p,
     label {
-      font-family: Montserrat;
+      font-family: inherit;
       font-style: normal;
       font-weight: normal;
       font-size: 2rem;
