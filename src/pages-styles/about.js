@@ -34,6 +34,9 @@ const StyledAbout = styled.div`
 
       p {
         padding: 1rem;
+        font-size: 2rem;
+        line-height: 3rem;
+        letter-spacing: 0.1rem;
       }
       .info {
         padding: 1rem 0;

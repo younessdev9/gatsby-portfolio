@@ -5,8 +5,7 @@ import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 import StyledAbout from "../pages-styles/about"
 import Tools from "../components/languges-tools/tools"
-import { MdLocationOn, MdEmail, MdPhone } from "react-icons/md"
-
+import { MdLocationOn, MdMail, MdPhone } from "react-icons/md"
 const About = () => {
   const data = useStaticQuery(graphql`
     {
@@ -44,7 +43,7 @@ const About = () => {
               </div>
 
               <div className="sub-info">
-                <MdEmail className="icon" />
+                <MdMail className="icon" />
                 <p>
                   <a href="mailto:younessdev@yahoo.com">younessdev@yahoo.com</a>
                 </p>
