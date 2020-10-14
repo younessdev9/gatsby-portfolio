@@ -90,7 +90,7 @@ const StyledContact = styled.div`
     textarea {
       resize: vertical;
       min-height: 10rem;
-      padding: 0.5rem 1rem;
+      padding: 1rem 1rem;
     }
 
     input:focus::placeholder label {

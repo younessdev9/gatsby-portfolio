@@ -31,6 +31,7 @@ const StyledAbout = styled.div`
     .info-wrapper {
       max-width: 79rem;
       min-width: 60rem;
+      padding-left: 2rem;
 
       p {
         padding: 1rem;
@@ -115,6 +116,7 @@ const StyledAbout = styled.div`
       padding: 0;
       .info-wrapper {
         min-width: auto;
+        padding-left: 0;
       }
     }
     .img-container {

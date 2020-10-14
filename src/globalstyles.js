@@ -1,7 +1,8 @@
 import { createGlobalStyle } from "styled-components"
 
 export const lightTheme = {
-  mode: "light",
+  bodyColor: "#ffffff",
+  Color: "#2f3030",
   primaryColor: "#2a9d8f", //#63b6ff
   darkColor: "#202124",
   socialColor: "#000000",
@@ -11,7 +12,7 @@ export const lightTheme = {
   btnHoverColor: "#F5F5F5",
   submitBtnBgColor: "#f5f5f5",
   anchortagColor: "red",
-  //text color
+  //text color 2f3030
   lightgreyTextColor: "#6C757D",
   mobileM: "387px",
   mobileL: "500px",
@@ -30,7 +31,8 @@ export const lightTheme = {
 }
 
 export const darkTheme = {
-  mode: "dark",
+  bodyColor: "#202124",
+  Color: "#fff",
   blur: "#C4C4C4",
   lightColor: "#F5F5F5", //   buttonColor
   socialColor: "#F5F5F5",
@@ -84,9 +86,8 @@ export const Globalstyles = createGlobalStyle`
     }
     font-size: 1.7rem;
     font-family: 'Roboto', sans-serif;
-    background-color: ${({ theme }) =>
-      theme.mode === "dark" ? theme.darkColor : "#FFFFFF"};
-    color: ${({ theme }) => (theme.mode === "dark" ? "#F5F5F5" : "#2f3030")};
+    background-color: ${({ theme }) => theme.bodyColor};
+    color: ${({ theme }) => theme.Color};
     padding: 7rem 1rem 0 1rem;
     overflow-x: hidden;
     @media only screen and (min-width: ${({ theme }) => theme.desktop}) {
