@@ -107,7 +107,7 @@ const StyledContact = styled.div`
     height: auto;
   }
 
-  @media only screen and (max-width: ${({ theme }) => theme.mobileX}) {
+  @media only screen and (max-width: ${({ theme }) => theme.mobileL}) {
     max-width: 98%;
     padding: 0.4rem;
     align-items: center;

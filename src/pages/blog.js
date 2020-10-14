@@ -9,7 +9,7 @@ const Blog = () => (
       description="this is youness blog where you can find all my blog about development and personal articles"
     />
     <StyledBlog>
-      <h3>comming soon!</h3>
+      <h3>coming soon!</h3>
     </StyledBlog>
   </Layout>
 )

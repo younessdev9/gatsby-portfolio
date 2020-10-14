@@ -91,13 +91,8 @@ export const StyledHeader = styled.nav`
       height: 7rem;
     }
   }
-
+  /* 500px */
   @media only screen and (min-width: ${({ theme }) => theme.mobileL}) {
-    .header-wrapper {
-      width: 93%;
-    }
-  }
-  @media only screen and (max-width: ${({ theme }) => theme.mobileX}) {
     .header-wrapper {
       width: 93%;
       height: 6vh;

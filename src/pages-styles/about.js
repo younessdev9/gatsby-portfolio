@@ -117,6 +117,7 @@ const StyledAbout = styled.div`
       .info-wrapper {
         min-width: auto;
         padding-left: 0;
+        width: 90%;
       }
     }
     .img-container {

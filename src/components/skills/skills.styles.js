@@ -71,8 +71,16 @@ export const StyledSkills = styled.div`
       justify-content: center;
     }
   }
-
+  /* 500px */
   @media (max-width: ${({ theme }) => theme.mobileL}) {
+    width: 90%;
+    margin: 2rem auto;
+    padding: 0;
+    h2 {
+      font-weight: normal;
+      font-size: 2rem;
+      line-height: 3rem;
+    }
     .skill-item {
       height: 32rem;
       width: 27rem;
@@ -83,16 +91,6 @@ export const StyledSkills = styled.div`
     .skill-icon {
       width: 23rem;
       height: 26rem;
-    }
-  }
-  @media (max-width: ${({ theme }) => theme.mobileX}) {
-    width: 90%;
-    margin: 2rem auto;
-    padding: 0;
-    h2 {
-      font-weight: normal;
-      font-size: 2rem;
-      line-height: 3rem;
     }
   }
 

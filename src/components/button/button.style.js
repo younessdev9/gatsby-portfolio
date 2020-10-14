@@ -28,10 +28,6 @@ export const StyledBtn = styled(Link)`
     color: ${({ theme }) => theme.btnHoverColor};
   }
 
-  @media only screen and (max-width: ${({ theme }) => theme.tabletL}) {
-    width: 17rem;
-    margin-left: 0;
-  }
   /* 1024px */
   @media only screen and (max-width: ${({ theme }) => theme.laptop}) {
     width: 15rem;
@@ -39,13 +35,14 @@ export const StyledBtn = styled(Link)`
     margin: 1rem;
   }
   /* 796px */
-  @media only screen and (max-width: ${({ theme }) => theme.mobileL}) {
-    width: 11rem;
-    height: 4rem;
-    font-size: 1.7rem;
+  @media only screen and (max-width: ${({ theme }) => theme.tabletL}) {
+    width: 17rem;
+    margin-left: 0;
   }
   /* 500px */
-  @media only screen and (max-width: ${({ theme }) => theme.mobileX}) {
-    width: 13rem;
+  @media only screen and (max-width: ${({ theme }) => theme.mobileL}) {
+    width: 12rem;
+    height: 4rem;
+    font-size: 1.7rem;
   }
 `

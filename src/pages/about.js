@@ -30,11 +30,16 @@ const About = () => {
           />
           <div className="info-wrapper">
             <p>
-              I'm a Self-taught React developer with a strong sense of
-              aesthetics and interaction. I'm 21 years old, and I'm in love with
-              the new technologies like Reactjs and Gatsbyjs, and ambitious to
-              make my place in the open-source world. I'm a person who improves
-              his skills each and every day to stay up to date
+              I’m a 21 years-old Self-taught JavaScript Developer that focuses
+              on front-end frameworks and libraries such as Reactjs and
+              Gatsbyjs. I'm very passionate about web development, Especially
+              the new technologies and tools that make building fast and
+              performant apps a lot more efficient and fast, therefore I’m a
+              persistent learner who likes to stay up to date packed with the
+              latest tools, also an ambitious developer looking to make my place
+              in the tech world. I’m currently focusing on learning and getting
+              good at Nodejs with Express and MongoDB with Mongoose and much
+              more …
             </p>
             <div className="info">
               <div className="sub-info">

@@ -74,12 +74,15 @@ export const StyledSection = styled.section`
       }
     }
   }
-
+  /* 796px */
   @media only screen and (max-width: ${({ theme }) => theme.tabletL}) {
     .right-section {
       display: none;
     }
     .left-section {
+      .btns {
+        justify-content: center;
+      }
       h3 {
         .hi {
           font-size: 1.8rem;
@@ -89,33 +92,6 @@ export const StyledSection = styled.section`
       h4 {
         text-align: left;
         margin-top: 2rem;
-      }
-    }
-  }
-  @media only screen and (max-width: ${({ theme }) => theme.mobileL}) {
-    .left-section {
-      align-items: center;
-      width: 100%;
-      flex-basis: 400rem;
-      padding: 0;
-      margin: 4rem 0;
-      h3 {
-        padding: 0 2rem;
-      }
-
-      .btns {
-        width: 75%;
-        margin-top: 2.6rem;
-        justify-content: center;
-      }
-    }
-
-    .right-section {
-      padding: 0;
-
-      .myicon {
-        max-width: 27rem;
-        height: 30rem;
       }
     }
   }
@@ -131,7 +107,7 @@ export const StyledSection = styled.section`
       }
     }
   }
-  @media only screen and (max-width: ${({ theme }) => theme.mobileX}) {
+  @media only screen and (max-width: ${({ theme }) => theme.mobileL}) {
     padding: 0;
     margin: 1rem auto;
     width: 90%;
@@ -146,9 +122,16 @@ export const StyledSection = styled.section`
       flex-direction: column;
       padding: 0;
       margin: 0 auto 1rem auto;
+      align-items: center;
+      width: 100%;
+      flex-basis: 400rem;
+      padding: 0;
+      margin: 4rem 0;
 
       .btns {
-        width: 74%;
+        width: 75%;
+        margin-top: 2.6rem;
+        justify-content: center;
       }
       h4 {
         text-align: center;
@@ -159,9 +142,17 @@ export const StyledSection = styled.section`
         font-size: 3rem;
         font-weight: 500;
         font-style: normal;
+        padding: 0 2rem;
         .hi {
           display: none;
         }
+      }
+    }
+    .right-section {
+      padding: 0;
+      .myicon {
+        max-width: 27rem;
+        height: 30rem;
       }
     }
   }

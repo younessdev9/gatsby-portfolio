@@ -96,7 +96,7 @@ const StyledProjects = styled.div`
   @media only screen and (max-width: ${({ theme }) => theme.tabletL}) {
     padding: 0;
   }
-  @media only screen and (max-width: ${({ theme }) => theme.mobileX}) {
+  @media only screen and (max-width: ${({ theme }) => theme.mobileL}) {
     margin: 2 auto;
     padding: 0;
     width: 90%;
