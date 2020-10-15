@@ -5,8 +5,9 @@ import Footer from "../components/footer/footer.component"
 import { Globalstyles, lightTheme, darkTheme } from "../globalstyles"
 import Main from "./main"
 const Layout = ({ children }) => {
-  const currentTheme = window.localStorage.getItem("theme")
-  const [theme, setTheme] = useState(currentTheme ? currentTheme : "light")
+  const currentTheme =
+    typeof window !== undefined ? window.localStorage.getItem("theme") : "light"
+  const [theme, setTheme] = useState(currentTheme)
   const [open, setOpen] = useState(false)
 
   const toggleTheme = () => {
