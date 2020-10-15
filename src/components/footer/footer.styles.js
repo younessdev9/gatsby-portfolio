@@ -9,6 +9,9 @@ const StyledFooter = styled.footer`
   padding: 1rem;
   background-color: #298880;
   color: #333333;
+  .social-footer {
+    width: 33%;
+  }
   h4 {
     font-size: 1.6rem;
     font-weight: 500;

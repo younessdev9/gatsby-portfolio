@@ -16,8 +16,7 @@ export const StyledHeader = styled.nav`
     width: 80%;
     height: 5vh;
     margin: 0 auto;
-    padding: 1rem;
-    padding-bottom: 2rem;
+    padding: 0 0 1.4rem;
 
     .menu-icon {
       display: none;
@@ -77,7 +76,7 @@ export const StyledHeader = styled.nav`
     .header-wrapper {
       height: 3vh;
       margin: 0 auto;
-      padding: 0.4rem;
+      padding: 2rem;
 
       .menu-icon {
         display: none;
