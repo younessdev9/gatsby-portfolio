@@ -11,7 +11,7 @@ export const StyledSocial = styled.ul`
   width: 90%;
   margin-top: 2rem;
   .social-icon {
-    fill: ${props => props.theme.socialColor};
+    fill: ${({ theme }) => theme.socialColor};
     width: 2.7rem;
     height: 2.7rem;
 

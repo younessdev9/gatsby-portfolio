@@ -6,7 +6,7 @@ export const StyledHeader = styled.nav`
   position: fixed;
   top: 0;
   border-bottom: 2px #33333380 solid;
-  background-color: ${({ theme }) => theme.buttonBg};
+  background-color: ${({ theme }) => theme.bodyColor};
   z-index: 100;
   padding-top: 1rem;
   .header-wrapper {
