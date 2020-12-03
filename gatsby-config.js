@@ -32,17 +32,10 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          {
-            family: `Roboto`,
-            variants: [`400`, `500`, `700`],
-          },
-          {
-            family: `Open Sans`,
-          },
-        ],
+        fonts: [`Roboto\:400,500,700`, `source sans pro\:300,400,600,700`],
+        display: "swap",
       },
     },
     {
