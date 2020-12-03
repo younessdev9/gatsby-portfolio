@@ -1,7 +1,7 @@
 {
-  "name": "Youness website",
+  "name": "gatsby-uness-portfolio",
   "private": true,
-  "description": "Younessdev blog on web",
+  "description": "an open sourse portfolio build using gatsby",
   "version": "0.1.0",
   "license": "0BSD",
   "scripts": {
@@ -16,6 +16,7 @@
   "dependencies": {
     "axios": "^0.20.0",
     "babel-plugin-styled-components": "^1.11.1",
+    "date-fns": "^2.16.1",
     "formik": "^2.1.5",
     "gatsby": "^2.24.26",
     "gatsby-image": "^2.4.14",
