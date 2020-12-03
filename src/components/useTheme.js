@@ -1,18 +1,18 @@
 import { useState, useEffect } from "react"
 
 function useTheme() {
-  const currentTheme = () => {
-    if (typeof window !== `undefined`) {
-      let currentTheme = window.localStorage.getItem("theme") || "light"
-      if (currentTheme) {
-        return currentTheme
-      } else {
-        window.localStorage.setItem("theme", "light")
-      }
-      return currentTheme
-    }
-  }
-  const [theme, setTheme] = useState(currentTheme)
+  // const currentTheme = () => {
+  //   if (typeof window !== `undefined`) {
+  //     let currentTheme = window.localStorage.getItem("theme") || "light"
+  //     if (currentTheme) {
+  //       return currentTheme
+  //     } else {
+  //       window.localStorage.setItem("theme", "light")
+  //     }
+  //     return currentTheme
+  //   }
+  // }
+  const [theme, setTheme] = useState("light")
   const toggleTheme = () => {
     if (theme === "light" && typeof window !== `undefined`) {
       window.localStorage.setItem("theme", "dark")

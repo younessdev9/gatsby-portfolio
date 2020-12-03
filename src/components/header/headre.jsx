@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-//import DarkModeToggle from "react-dark-mode-toggle"
+import DarkModeToggle from "react-dark-mode-toggle"
 import { StyledHeader } from "./header"
 import Logo from "../assets/thefinal.svg"
 import Burger from "../burger/burger"
@@ -38,13 +38,12 @@ const Header = ({ toggle, checked, open, setOpen }) => {
             </Link>
           </li>
           <li>
-            <button onClick={toggle}>Click</button>
-            {/* <DarkModeToggle
-            onChange={toggle}
-            checked={checked()}
-            size={60}
-            speed={3}
-          /> */}
+            <DarkModeToggle
+              onChange={toggle}
+              checked={checked()}
+              size={60}
+              speed={3}
+            />
           </li>
         </ul>
       </div>
