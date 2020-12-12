@@ -70,7 +70,7 @@ const Contact = () => {
     <Layout>
       <SEO
         title="Contact Me"
-        description="this wher you can contact me to hire me as react develeper or for freelance jobs"
+        description="you can contact me for a Front-End Developer position or freelance jobs"
       />
       <StyledContact>
         {loading && (
@@ -96,9 +96,9 @@ const Contact = () => {
             value={formik.values.fullName}
             required
           />
-          {formik.touched.fullName && formik.errors.fullName ? (
+          {formik.touched.fullName && formik.errors.fullName && (
             <span className="error">{formik.errors.fullName}</span>
-          ) : null}
+          )}
 
           <label htmlFor="email">Email:</label>
           <input
@@ -111,9 +111,9 @@ const Contact = () => {
             value={formik.values.email}
             required
           />
-          {formik.touched.email && formik.errors.email ? (
+          {formik.touched.email && formik.errors.email && (
             <span className="error">{formik.errors.email}</span>
-          ) : null}
+          )}
 
           <label htmlFor="message">Message:</label>
           <textarea
@@ -126,9 +126,9 @@ const Contact = () => {
             value={formik.values.message}
             required
           />
-          {formik.touched.message && formik.errors.message ? (
+          {formik.touched.message && formik.errors.message && (
             <span className="error">{formik.errors.message}</span>
-          ) : null}
+          )}
           <input type="submit" value="Send" />
           {serverState && (
             <span className={!serverState.ok ? "error" : "succes"}>
